@@ -22,9 +22,10 @@
 
 
 # symbol object:
-    # - bool: character
-    # - bool: word
+    # - bool: is_character
+    # - bool: is_word
     # - string: definition / description
+    # - string: word
 
 # character object:
     # * inherits from symbol
@@ -36,3 +37,15 @@
     # - list of strings: possible words
     # - list of strings: characters the word is composed of
     # - list of strings: known natural english words that this word can be
+
+
+
+
+
+
+
+"""
+1-31-18:
+not sure if characters that are made up of other characters should be considered words or characters
+
+"""
