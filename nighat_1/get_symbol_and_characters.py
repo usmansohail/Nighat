@@ -4,6 +4,40 @@ import pickle
 import re
 
 
+class symbol:
+    words = []
+    composition = []
+    id = None
+    is_word = None
+    is_character = None
+
+    def __init__(self, words, composition, id, is_word):
+        self.words = words
+        self.composition = composition
+        self.id = id
+        self.is_word = is_word
+        self.is_character = ~is_word
+
+
+# character object:
+# * inherits from symbol
+# - enum: place (pre, post, root)
+# - string or enum: morphological relationship
+
+class character(symbol):
+    morph_relationships = None
+
+    def __init__(self, words, composition, id, is_word, morph_relationships):
+        symbol.__init__(words, composition, id, is_word)
+        self.morph_relationships = morph_relationships
+
+
+
+# bliss-word object:
+# * inherits from symbol
+
+
+
 # get all the characters
 def get_characters():
     # open the excel file
@@ -53,6 +87,7 @@ def get_characters():
     for line in lines:
         def_dict[line[0]] = line[2]
 
+        # get the description/composition
         if " - Character" in str(line[2]):
             characters[line[0]] = [line[1], line[2]]
 
@@ -61,9 +96,16 @@ def get_characters():
             composition = str(re.findall(regex, str(line[2]).replace('\n', '')))
             composition = composition.replace('(', '')
             composition = composition.replace(')', '')
-            composition = composition.replace('[', '')
-            composition = composition.replace(']', '')
             composition = composition.replace('\'', '')
+            composition = composition.replace('"', '')
+            composition = composition.replace('_', ' ')
+
+
+            # remove [ first bracket
+            composition = composition[1:-1]
+
+
+
             #print("Comp: ", composition)
             regex_2 = re.compile(r":.*")
             remove_string = re.findall(regex_2, str(composition))
@@ -81,7 +123,13 @@ def get_characters():
                 for i in range(len(remove_string)):
                     composition = composition.replace(remove_string[i], '')
                     #print("remove string:", remove_string)
-            print("final string: ", composition, '\n')
+            if '[' in composition:
+                regex = re.compile(r"\[.*\]")
+                remove_string = re.findall(regex, composition)
+                for i in range(len(remove_string)):
+                    composition = composition.replace(remove_string[i], '')
+            print("final string: ", composition)
+            print("part 1: ", line[0], '\n', "part 2: ", line[1], '\n', "part 3: ", line[2], '\n')
             if composition == "":
                 print('wtf', line[0], line[1], line[2])
 
@@ -111,16 +159,9 @@ def get_characters():
 
     print(len(word_to_id_dict.keys()))
     pickle.dump(word_to_id_dict, open("word_to_char_id.p", "wb"))
-    #for key in ambiguous_words.keys():
-    #    print(key, ": ", ambiguous_words[key])
-
-    #print(len(ambiguous_words))
 
 
 
-#bliss_dict = dict(pickle.load( open("C:/Users/Usman Sohail/Documents/CSCI-490/corpera/get_corpus_data/bliss_dict.p", 'rb')))
-        #for key in bliss_dict.keys():
-        #if bliss_dict[key]
 
 
 

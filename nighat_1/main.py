@@ -24,8 +24,8 @@
 # symbol object:
     # - bool: is_character
     # - bool: is_word
-    # - string: definition / description
-    # - string: word
+    # - list of string: words
+    # - list of string: composition
 
 # character object:
     # * inherits from symbol
@@ -34,9 +34,7 @@
 
 # bliss-word object:
     # * inherits from symbol
-    # - list of strings: possible words
-    # - list of strings: characters the word is composed of
-    # - list of strings: known natural english words that this word can be
+
 
 
 
