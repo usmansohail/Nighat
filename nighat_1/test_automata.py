@@ -55,8 +55,9 @@ def levenshtein(s1, s2):
 
 
 class BKNode(object):
-    def __init__(self, term):
+    def __init__(self, term, object):
         self.term = term
+        self.object = object
         self.children = {}
 
     def insert(self, other):
@@ -86,5 +87,5 @@ for word in words:
     t_dict.insert(word)
 
 r = []
-t_dict.search("food", 1, r)
+t_dict.search("food", 2, r)
 print(r)
