@@ -77,12 +77,6 @@ class character(symbol):
 
 
 
-
-# bliss-word object:
-# * inherits from symbol
-
-
-
 # get all the characters
 def get_characters():
     # open the excel file
@@ -159,7 +153,7 @@ def get_characters():
             composition = composition.replace(')', '')
             composition = composition.replace('\'', '')
             composition = composition.replace('"', '')
-            composition = composition.replace('_', ' ')
+            # composition = composition.replace('_', ' ')
 
 
 
@@ -179,8 +173,8 @@ def get_characters():
             if len(remove_string) > 0:
                 composition = composition.replace(remove_string[0], '')
                 #print("parts removed: ", remove_string[0])
-            if ',' in composition:
-                regex = re.compile(r",\w*,*\w*,*\w*,*")
+            while ',' in composition:
+                regex = re.compile(r"(,\w*_*\w*)*")
                 remove_string = re.findall(regex, composition)
                 for i in range(len(remove_string)):
                     composition = composition.replace(remove_string[i], '')
@@ -242,20 +236,32 @@ get_characters()
 chars  = pickle.load(open("chars_list.p", 'rb'))
 syms  = pickle.load(open("symbols_list.p", 'rb'))
 
-num_indicators = 0
-num_char_ind = 0
+# num_indicators = 0
+# num_char_ind = 0
+#
+def ind_info():
+    for sym in syms:
+        if not sym.ind():
+            sym.display_info()
+#         num_indicators += 1
+# for sym in chars:
+#     if sym.ind():
+#         sym.display_info
+#         num_indicators += 1
+#
+# print("num indicators: ", num_indicators)
+# print("chars: ", len(chars))
+# print("syms: ", len(syms))
+# print("syms and chars: ", len(syms) + len(chars))
+#
 
-for sym in syms:
-    if sym.ind():
-        sym.display_info()
-        num_indicators += 1
-for sym in chars:
-    if sym.ind():
-        sym.display_info
-        num_indicators += 1
 
-print("num indicators: ", num_indicators)
-print("chars: ", len(chars))
-print("syms: ", len(syms))
-print("syms and chars: ", len(syms) + len(chars))
-
+def get_dicts():
+    # create a dictionary from id to symbol, as well as a dictionary from composition ids to symbol
+    id_to_symbol = {}
+    composition_to_symbol = {}
+    def_to_symbol = {}
+    for sym in syms:
+        id_to_symbol[sym.id] = sym
+        # def_to_symbol[sym.words] =
+        # if len(sym.composition) > 0:
