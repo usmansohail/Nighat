@@ -7,6 +7,7 @@ import random
 class symbol:
     words = []
     composition = []
+    id_composition = []
     id = None
     is_word = None
     is_character = None
@@ -35,9 +36,9 @@ class symbol:
         if "indicator_(" in words:
             self.is_indicator = True
             self.words = [words]
-            print("in here: ", words)
+            # print("in here: ", words)
         else:
-            print("Not in here: ", words)
+            # print("Not in here: ", words)
             self.is_indicator = False
             t = re.sub(regex, '', str(words))
             self.words = str(t).split(',')
@@ -76,6 +77,7 @@ class character(symbol):
         self.morph_relationships = morph_relationships
 
 
+# https://dzone.com/articles/algorithm-week-damn-cool-1
 
 
 class BKNode(object):
@@ -96,7 +98,7 @@ class BKNode(object):
             results = []
         distance = levenshtein(self.term, term)
         counter = 1
-        if distance <= k:
+        if distance <= k and self.term is not "" and self.object is not None:
             results.append((distance, self.term, self.object))
         for i in range(max(0, distance - k), distance + k + 1):
             child = self.children.get(i)

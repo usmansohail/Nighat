@@ -8,7 +8,7 @@ from classes import symbol, character
 # get all the characters
 def get_characters():
     # open the excel file
-    file = open("dictionary.xlsx", 'rb')
+    file = open("dictionary-n.xlsx", 'rb')
     wb = pyxl.load_workbook(file)
     ws = wb.active
 
@@ -23,7 +23,15 @@ def get_characters():
     for row in ws.iter_rows():
         if "BCI-AV#" not in str(row[0].value) and row[0].value is not None:
             lines.append((row[0].value, str(row[2].value), str(row[3].value)))
-            print(lines[-1])
+            #print(lines[-1])
+
+    # for row in ws.iter_rows():
+    #     if "BCI-AV#" not in str(row[0].value) and row[0].value is not None:
+    #         if str(row[2].value) is not "":
+    #             lines.append((row[0].value, str(row[1].value), str(row[2].value)))
+    #         else:
+    #             lines.append((row[0].value, str(row[1].value), str(row[3].value)))
+            #print(lines[-1])
 
     # create dicts
     num_to_def_dict = {}
@@ -74,7 +82,7 @@ def get_characters():
             id_to_character_dict[line[0]] = [line[1], line[2]]
             is_character = True
 
-        if " + " in str(line[2]):
+        if "+" in str(line[2]):
             regex = re.compile(r"\(.+\)")
             composition = str(re.findall(regex, str(line[2]).replace('\n', '')))
             composition = composition.replace('(', '')
@@ -87,6 +95,7 @@ def get_characters():
 
             # remove [ first bracket
             composition = composition[1:-1]
+
 
 
 
@@ -117,6 +126,9 @@ def get_characters():
             # if composition == "":
                 # print('wtf', line[0], line[1], line[2])
 
+        # print(line[0], ": ", composition, " ; ", line)
+
+
         if(is_character):
             t_is_word = not is_character
             t_char = symbol(line[1], composition.split(" + "), line[0], t_is_word)
@@ -126,7 +138,7 @@ def get_characters():
         symbols.append(sym)
 
 
-    print(len(id_to_character_dict.keys()))
+    #print(len(id_to_character_dict.keys()))
 
     pickle.dump(id_to_character_dict, open("bliss_chars.p", 'wb'))
 
@@ -148,7 +160,7 @@ def get_characters():
             else:
                 word_to_id_dict[word] = [key]
 
-    print(len(word_to_id_dict.keys()))
+    #print(len(word_to_id_dict.keys()))
     pickle.dump(word_to_id_dict, open("word_to_char_id.p", "wb"))
 
     pickle.dump(characters, open("chars_list.p", 'wb'))

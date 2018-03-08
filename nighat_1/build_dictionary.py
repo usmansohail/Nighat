@@ -77,14 +77,35 @@ def get_most_likely_symbols(phrase):
 
     sorted_results = sorted(temp, key=lambda x: x[0], reverse=True)
 
-    print(phrase, ": \n")
-    for i in range(5):
-        if i < len(sorted_results):
-            print("Score: ", sorted_results[i][0], "word: ", sorted_results[i][1])
-    print('\n\n')
+    # print(phrase, ": \n")
+    # for i in range(5):
+    #     if i < len(sorted_results):
+    #         print("Score: ", sorted_results[i][0], "word: ", sorted_results[i][1])
+    # print('\n\n')
+
+    return sorted_results
 
 get_bk_dict()
-(get_most_likely_symbols('gun'))
-(get_most_likely_symbols('run'))
-(get_most_likely_symbols('to expect'))
-(get_most_likely_symbols('anticipate'))
+# (get_most_likely_symbols('gun'))
+# (get_most_likely_symbols('run'))
+# (get_most_likely_symbols('to expect'))
+# (get_most_likely_symbols('anticipate'))
+
+
+
+def add_id():
+    # display all composition
+    for sym in syms[100:120]:
+        # print(sym.words, ": ", sym.composition)
+        likely_id = []
+        if len(sym.composition) > 1:
+            for word in sym.composition:
+                if word is not '':
+                    likely_id = get_most_likely_symbols(word)
+                    if len(likely_id) > 1:
+                        sym.id_composition.append(likely_id[0][1][2])
+        print(sym.words)
+        print(sym.composition)
+        print(sym.id_composition, '\n')
+
+add_id()
