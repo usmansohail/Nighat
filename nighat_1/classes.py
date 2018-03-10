@@ -4,7 +4,7 @@ import bisect
 import random
 
 
-class symbol:
+class symbol(object):
     words = []
     composition = []
     id_composition = []
@@ -13,6 +13,8 @@ class symbol:
     is_character = None
     is_indicator = None
     morphological_info = []
+    extra_word_info  = []
+    has_extra_info = False
 
     def __init__(self, words, composition, id, is_word):
         self.words = words
@@ -23,7 +25,7 @@ class symbol:
 
 
 
-        # fet morph info
+        # get morph info
         regex = re.compile(r"\(.*\)")
         morph = re.findall(regex, words)
         temp_words = []
@@ -31,6 +33,15 @@ class symbol:
             temp_words.append(m.replace("(", "").replace(")", ""))
 
         self.morphological_info = temp_words
+
+        # get extra word info
+        self.extra_word_info = re.findall(regex, words)
+
+        if len(self.extra_word_info) > 0:
+            self.extra_word_info = self.extra_word_info[0]
+            self.has_extra_info = True
+
+
 
         # get indicator info
         if "indicator_(" in words:
@@ -43,6 +54,33 @@ class symbol:
             t = re.sub(regex, '', str(words))
             self.words = str(t).split(',')
 
+        # add extra info word to words list
+        if self.has_extra_info:
+            # for every word, add the combination of the extra info
+            # and the word to the list of words
+
+            temp_word = str(self.extra_word_info).replace("(", '').replace(")", '')
+            temp_list_of_words = []
+            for word in self.words:
+                initial_word = re.sub(regex, '', str(word))
+                temp_list_of_words.append(str(temp_word) + " " + initial_word)
+
+            for word in temp_list_of_words:
+                self.words.append(word)
+            # print(self.words)
+
+    def is_extra_info(self):
+        if len(self.extra_word_info) > 0:
+            return True
+        return False
+
+    def add_composition(self, word, input_id):
+        self.composition.append(word)
+        self.id_composition.append(input_id)
+
+    def replace_composition(self, word_list, input_id_list):
+        self.composition = word_list
+        self.id_composition = input_id_list
 
     def display_info(self):
 
@@ -126,3 +164,46 @@ def levenshtein(s1, s2):
 
     return previous_row[-1]
 
+class node():
+    children = None
+    symbol = None
+
+    def __init__(self):
+        self.children = {}
+
+    def insert_children(self, child):
+        try:
+            return self.children[child]
+        except KeyError:
+            self.children[child] = node()
+            return self.children[child]
+
+    def insert_symbol(self, symbol):
+        self.symbol = symbol
+
+    def get_children(self, input_id):
+        return self.children[input_id]
+
+    def get_symbol(self):
+        return self.symbol
+
+class composition_builder():
+    parent_node = None
+
+    def __init__(self):
+        self.parent_node = node()
+
+    def insert(self, list_of_ids, symbol):
+        current_node = self.parent_node
+
+        for i in range(len(list_of_ids)):
+            current_node = current_node.insert_children(list_of_ids[i])
+        current_node.insert_symbol(symbol)
+
+
+
+    def get_symbol(self, list_of_ids):
+        current_node = self.parent_node
+        for i in range(len(list_of_ids)):
+            current_node = current_node.get_children(list_of_ids[i])
+        return current_node.get_symbol()

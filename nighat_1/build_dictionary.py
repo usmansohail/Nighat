@@ -4,6 +4,7 @@ from openpyxl import Workbook
 import pickle
 from classes import symbol, character, BKNode, levenshtein
 from difflib import SequenceMatcher
+from openpyxl import Workbook
 
 
 # This file will implement methods for getting the symbols from either the ID, or
@@ -63,7 +64,7 @@ match_longest_string("run", "brung")
 def get_most_likely_symbols(phrase):
     # first get results from BK tree
     results = []
-    bk_id_dict.search(phrase, 3, results)
+    bk_id_dict.search(phrase, 5, results)
 
     # of these results, order them by longest common substring
     temp = [None]*len(results)
@@ -91,21 +92,66 @@ get_bk_dict()
 # (get_most_likely_symbols('to expect'))
 # (get_most_likely_symbols('anticipate'))
 
+#get_most_likely_symbols("description indicator")
 
 
 def add_id():
     # display all composition
-    for sym in syms[100:120]:
+    for sym in syms:
         # print(sym.words, ": ", sym.composition)
         likely_id = []
+        sym_id = []
         if len(sym.composition) > 1:
             for word in sym.composition:
                 if word is not '':
                     likely_id = get_most_likely_symbols(word)
-                    if len(likely_id) > 1:
-                        sym.id_composition.append(likely_id[0][1][2])
-        print(sym.words)
-        print(sym.composition)
-        print(sym.id_composition, '\n')
+                    if len(likely_id) > 0:
+                        sym_id.append(likely_id[0][1][2])
+                        print("adding: ", likely_id[0][1][1], " to ", sym.words)
+        if len(sym_id) > 0:
+            sym.id_composition = sym_id
+        #
+        # print(sym.words)
+        # print(sym.composition)
+        # print(sym.id_composition, '\n')
 
+    pickle.dump(syms, open('syms-2.p', 'wb'))
 add_id()
+
+
+
+syms = pickle.load(open('syms-2.p', 'rb'))
+
+def make_wb(book_name):
+    # save the id's to a workbook
+    wb = Workbook()
+    sheet = wb.active
+
+    pickle.dump(syms, open("syms-2.p", 'wb'))
+
+    num_not_complete = 0
+    # get id_to_words_dict
+    id_to_words = pickle.load(open("id_to_words.p", 'rb'))
+
+    for i in range(0, len(syms)):
+        sheet['A' + str(i + 1)] = syms[i].id
+        sheet['B' + str(i + 1)] = ", ".join(list(syms[i].words))
+        sheet['C' + str(i + 1)] = ", ".join(list(syms[i].composition))
+        sheet['D' + str(i + 1)] = ", ".join(str(sym_id) for sym_id in list(syms[i].id_composition))
+
+        temp = []
+        for id in syms[i].id_composition:
+            temp.append(id_to_words[id])
+            temp.append(';\n')
+
+        sheet['E' + str(i + 1)] = ", ".join(temp)
+
+        if len(list(syms[i].composition)) is not len(list(syms[i].id_composition)) and \
+            len(list(syms[i].composition)) > 1:
+            sheet['F' + str(i + 1)] = "***"
+            num_not_complete += 1
+
+    wb.save(book_name)
+    print("Number of incomplete symbols: ", num_not_complete)
+
+make_wb("f1.xlsx")

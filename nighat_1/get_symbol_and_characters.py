@@ -61,9 +61,10 @@ def get_characters():
     #
     # print(lines[-1])
 
-    dict = {}
+    id_to_words_dict = {}
     for line in lines:
-        dict[line[0]] = line[1]
+        id_to_words_dict[line[0]] = line[1]
+
 
 
 
@@ -102,13 +103,17 @@ def get_characters():
             #print("Comp: ", composition)
             regex_2 = re.compile(r":.*")
             remove_string = re.findall(regex_2, str(composition))
-            if len(remove_string) > 0:
-                composition = composition.replace(remove_string[0], '')
+            while len(remove_string) > 0:
+                for i in range(len(remove_string)):
+                    composition = composition.replace(remove_string[0], '')
+                remove_string = re.findall(regex_2, composition)
                 # print("parts removed: ", remove_string[0])
             regex_2 = re.compile(r": .*")
             remove_string = re.findall(regex_2, str(composition))
-            if len(remove_string) > 0:
-                composition = composition.replace(remove_string[0], '')
+            while len(remove_string) > 0:
+                for i in range(len(remove_string)):
+                    composition = composition.replace(remove_string[i], '')
+                remove_string = re.findall(regex_2, composition)
                 #print("parts removed: ", remove_string[0])
             while ',' in composition:
                 regex = re.compile(r"(,\w*_*\w*)*")
@@ -116,11 +121,19 @@ def get_characters():
                 for i in range(len(remove_string)):
                     composition = composition.replace(remove_string[i], '')
                     #print("remove string:", remove_string)
-            if '[' in composition:
-                regex = re.compile(r"\[.*\]")
-                remove_string = re.findall(regex, composition)
+            regex = re.compile(r"\[[^\+]*\]")
+            remove_string = re.findall(regex, composition)
+            reg2 = re.compile(r"\-.*[cC]haracter.*")
+            remove = re.findall(reg2, composition)
+            while len(remove_string) > 0:
                 for i in range(len(remove_string)):
                     composition = composition.replace(remove_string[i], '')
+                remove_string = re.findall(regex, composition)
+            while len(remove) > 0:
+                for i in range(len(remove)):
+                    composition = composition.replace(remove[i], '')
+                remove = re.findall(reg2, composition)
+            print("Comp: ", composition)
             # print("final string: ", composition)
             # print("part 1: ", line[0], '\n', "part 2: ", line[1], '\n', "part 3: ", line[2], '\n')
             # if composition == "":
@@ -145,8 +158,8 @@ def get_characters():
 
     word_to_id_dict = {}
     ambiguous_words = {}
-    for key in dict.keys():
-        words = str(dict[key]).split(',')
+    for key in id_to_words_dict.keys():
+        words = str(id_to_words_dict[key]).split(',')
         for word in words:
             if word in word_to_id_dict.keys():
                 # add it to the ambigous words dictionary
@@ -165,6 +178,7 @@ def get_characters():
 
     pickle.dump(characters, open("chars_list.p", 'wb'))
     pickle.dump(symbols, open("symbols_list.p", 'wb'))
+    pickle.dump(id_to_words_dict, open("id_to_words.p", 'wb'))
 
 
 
