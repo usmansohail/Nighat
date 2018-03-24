@@ -1,6 +1,11 @@
+import time
 import pickle
 from classes import composition_builder
 from classes import node
+import nltk
+from nltk import stem
+from nltk.stem.lancaster import LancasterStemmer
+from nltk.corpus import wordnet as wn
 
 
 def get_symbols():
@@ -19,11 +24,49 @@ def build_word_from_composition():
 
     return comp_builder
 
-builder = build_word_from_composition()
 
 
-temp_list = [8998, 13867]
-temp_list_2 = [13867, 8998]
 
-print(builder.get_symbol(temp_list).words)
-print(builder.get_symbol(temp_list_2).words)
+
+# builder = build_word_from_composition()
+#
+# t = [12613, 14390]
+# temp_list = [8998, 13867]
+# temp_list_2 = [13867, 8998]
+#
+# word_parts = [t, temp_list, temp_list_2]
+# # for l in word_parts:
+# #     composition = ""
+# #     for i, id in enumerate(l):
+# #         if i < len(l) - 1:
+# #             composition +=
+# print(builder.get_symbol(temp_list).words)
+# print(builder.get_symbol(temp_list_2).words)
+#
+#
+# st = LancasterStemmer()
+# #
+# start1 = int(round(time.time() * 1000))
+# print("###########", start1)
+# print(st.stem('running'))
+# print(st.stem('action'))
+# print(st.stem('question'))
+# print(st.stem('divide'))
+# print(st.stem('ran'))
+# print(st.stem('abide'))
+# print(st.stem('formal'))
+#
+# time2 = int(round(time.time() * 1000))
+# print("############", time2 - start1)
+# # wn.morphy seems to perform better but also take much longer
+# print(wn.morphy('denied', wn.VERB))
+# print(wn.morphy('divide'))
+# print(wn.morphy('abide'))
+# print(wn.morphy('action'))
+# print(wn.morphy('running'))
+# print(wn.morphy('greener', wn.ADJ))
+#
+#
+# time3 = int(round(time.time() * 1000))
+# print("############", time3 - time2)
+
