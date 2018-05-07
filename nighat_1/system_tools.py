@@ -28,45 +28,50 @@ def build_word_from_composition():
 
 
 
-# builder = build_word_from_composition()
+builder = build_word_from_composition()
+
+t = [12613, 14390]
+temp_list = [8998, 13867]
+temp_list_2 = [13867, 8998]
+
+he_she = [16161, 8499]
+his_hers = [14688, 24676]
+
+word_parts = [t, temp_list, temp_list_2]
+# for l in word_parts:
+#     composition = ""
+#     for i, id in enumerate(l):
+#         if i < len(l) - 1:
+#             composition +=
+print(builder.get_symbol(temp_list).words)
+print(builder.get_symbol(temp_list_2).words)
+print("He, she: ", builder.get_symbol(he_she).words)
+print("His, hers: ", builder.get_symbol(his_hers).words)
+
+
+st = LancasterStemmer()
 #
-# t = [12613, 14390]
-# temp_list = [8998, 13867]
-# temp_list_2 = [13867, 8998]
-#
-# word_parts = [t, temp_list, temp_list_2]
-# # for l in word_parts:
-# #     composition = ""
-# #     for i, id in enumerate(l):
-# #         if i < len(l) - 1:
-# #             composition +=
-# print(builder.get_symbol(temp_list).words)
-# print(builder.get_symbol(temp_list_2).words)
-#
-#
-# st = LancasterStemmer()
-# #
-# start1 = int(round(time.time() * 1000))
-# print("###########", start1)
-# print(st.stem('running'))
-# print(st.stem('action'))
-# print(st.stem('question'))
-# print(st.stem('divide'))
-# print(st.stem('ran'))
-# print(st.stem('abide'))
-# print(st.stem('formal'))
-#
-# time2 = int(round(time.time() * 1000))
-# print("############", time2 - start1)
-# # wn.morphy seems to perform better but also take much longer
-# print(wn.morphy('denied', wn.VERB))
-# print(wn.morphy('divide'))
-# print(wn.morphy('abide'))
-# print(wn.morphy('action'))
-# print(wn.morphy('running'))
-# print(wn.morphy('greener', wn.ADJ))
-#
-#
-# time3 = int(round(time.time() * 1000))
-# print("############", time3 - time2)
+start1 = int(round(time.time() * 1000))
+print("###########", start1)
+print(st.stem('running'))
+print(st.stem('action'))
+print(st.stem('question'))
+print(st.stem('divide'))
+print(st.stem('ran'))
+print(st.stem('abide'))
+print(st.stem('formal'))
+
+time2 = int(round(time.time() * 1000))
+print("############", time2 - start1)
+# wn.morphy seems to perform better but also take much longer
+print(wn.morphy('denied', wn.VERB))
+print(wn.morphy('divided', ))
+print(wn.morphy('abide'))
+print(wn.morphy('action'))
+print(wn.morphy('running'))
+print(wn.morphy('greener', wn.ADJ))
+
+
+time3 = int(round(time.time() * 1000))
+print("############", time3 - time2)
 

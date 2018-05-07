@@ -182,7 +182,10 @@ class node():
         self.symbol = symbol
 
     def get_children(self, input_id):
-        return self.children[input_id]
+        try:
+            return self.children[input_id]
+        except KeyError:
+            return None
 
     def get_symbol(self):
         return self.symbol
@@ -206,4 +209,7 @@ class composition_builder():
         current_node = self.parent_node
         for i in range(len(list_of_ids)):
             current_node = current_node.get_children(list_of_ids[i])
-        return current_node.get_symbol()
+        if current_node is not None:
+            return current_node.get_symbol()
+        else:
+            return symbol("", [], None, False)
