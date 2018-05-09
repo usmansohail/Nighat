@@ -4,6 +4,11 @@ import bisect
 import random
 
 
+
+class Gender(object):
+    masculine = "masculine"
+    feminine = "feminine"
+
 class symbol(object):
     words = []
     composition = []
@@ -208,6 +213,8 @@ class composition_builder():
     def get_symbol(self, list_of_ids):
         current_node = self.parent_node
         for i in range(len(list_of_ids)):
+            if current_node == None:
+                return symbol("", [], None, False)
             current_node = current_node.get_children(list_of_ids[i])
         if current_node is not None:
             return current_node.get_symbol()
