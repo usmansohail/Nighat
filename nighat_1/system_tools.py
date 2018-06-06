@@ -78,7 +78,7 @@ def id_to_word(ids, immediate_build):
 
 
 
-    print("Composition words: ", composition)
+    # print("Composition words: ", composition)
     return composition, gender
 
 
@@ -115,7 +115,7 @@ def build_word(ids):
                 word_list = word_list[0:i] + word_list[i + 1::]
                 indicator = True
                 if "indicator_(possessive" in word:
-                    print(handle_possessive(word_list, gender))
+                    # print(handle_possessive(word_list, gender))
                     return handle_possessive(word_list, gender)
                 if "past" in word:
                     return handle_time(word_list, 'past')
@@ -123,6 +123,8 @@ def build_word(ids):
                     return handle_time(word_list, 'future')
                 if "plural" in words:
                     return handle_plural(word_list)
+                else:
+                    list[j] = ' '
 
             else:
                 #clean the word
@@ -172,9 +174,9 @@ def build_sentence(list_of_lists):
                     words.append(['', 'a', 'the'])
                     article_check = False
             words.append(built_words)
-    print("############# WORDS: \n", words, '\n')
+    print("############# WORDS: \n", words)
     sentence = get_most_likely_sentence(words, .1)
-    print(sentence)
+    print(sentence, '\n')
 
 
 builder = build_word_from_composition()

@@ -145,7 +145,7 @@ def get_most_likely_sentence(list_of_lists, alpha):
         # create each combination of words
 
     # get the probabilities of the sentences
-    print("####################### SORTED PROBABILITIES WITH ALPHA = ", alpha)
+    # print("####################### SORTED PROBABILITIES WITH ALPHA = ", alpha)
     probs = []
     for combo in combinations:
         probs.append((sentence_likelihood(combo, alpha), combo))
@@ -157,7 +157,7 @@ def get_most_likely_sentence(list_of_lists, alpha):
     # for prob, sentence in probs:
         # print("probability for words: ", sentence, " = ", prob)
 
-    print('\n\n\n')
+
 
     return probs[-1]
 
