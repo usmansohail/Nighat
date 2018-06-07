@@ -31,7 +31,8 @@ percentage_dictionary(trigram)
 percentage_dictionary(fourgram)
 
 for i in range(10):
-    print(trigram[list(trigram.keys())[i]])
+    key = list(trigram.keys())[i]
+    print(key, ": ", trigram[key])
 print(len(bigram))
 
 
