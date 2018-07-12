@@ -10,9 +10,15 @@ from nltk.stem.lancaster import LancasterStemmer
 from nltk.corpus import wordnet as wn
 from classes import Gender
 from ngram import n_gram
-
-
 import logging
+
+#TODO ========= optimize code
+#TODO ========= re organize code
+#TODO ========= tokenize triplets:
+    # first get the most likely n-gram, then get  the next most likely n-gram,
+    # rather than getting the most likely of all combinations
+
+
 
 from nlglib.realisation.simplenlg.realisation import Realiser
 from nlglib.microplanning import *

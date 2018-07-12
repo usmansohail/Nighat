@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/ngram.py" line="92" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/ngram.py" line="59" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd77ad40-5248-417c-becc-14e79f31e465" name="Default" comment="" />
@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial__1_.coverage" NAME="simplenlg_tutorial (1) Coverage Results" MODIFIED="1525850418078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0" />
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial.coverage" NAME="simplenlg_tutorial Coverage Results" MODIFIED="1524946627979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0/examples" />
     <SUITE FILE_PATH="coverage/nighat_1$ngram.coverage" NAME="ngram Coverage Results" MODIFIED="1531388053193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nighat_1$system_tools.coverage" NAME="system_tools Coverage Results" MODIFIED="1531387933255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$system_tools.coverage" NAME="system_tools Coverage Results" MODIFIED="1531388658323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$tri_gram_model__1_.coverage" NAME="tri_gram_model (1) Coverage Results" MODIFIED="1525861766106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$test.coverage" NAME="test Coverage Results" MODIFIED="1524946771997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0" />
   </component>
@@ -38,8 +38,8 @@
       <file leaf-file-name="system_tools.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="42" selection-start-column="42" selection-end-column="42" />
+            <state relative-caret-position="45">
+              <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,8 +65,8 @@
       <file leaf-file-name="ngram.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ngram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -87,7 +87,7 @@
     <findStrings>
       <find>,</find>
       <find>wtf</find>
-      <find />
+      <find>four arrows</find>
       <find>257</find>
       <find>2577</find>
       <find>indicator</find>
@@ -97,14 +97,14 @@
       <find>(</find>
       <find>id</find>
       <find>dict</find>
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
-      <find />
+      <find>vertical line + horizon</find>
+      <find>say +</find>
+      <find>leader + cheer</find>
+      <find>leader + cheering</find>
+      <find>leader + chee</find>
+      <find>leader + cheerin</find>
+      <find>eye + pointer</find>
+      <find>language + castle</find>
       <find>#backspace</find>
       <find>backspace</find>
       <find>dump</find>
@@ -210,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ngram">
+  <component name="RunManager" selected="Python.system_tools">
     <configuration name="ngram" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nighat_1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -338,8 +338,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ngram" />
         <item itemvalue="Python.system_tools" />
+        <item itemvalue="Python.ngram" />
         <item itemvalue="Python.tri_gram_model (1)" />
         <item itemvalue="Python.tri_gram_model" />
         <item itemvalue="Python.simplenlg_tutorial (1)" />
@@ -539,15 +539,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
+        <state relative-caret-position="45">
+          <caret line="3" column="13" lean-forward="true" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ngram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
