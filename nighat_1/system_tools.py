@@ -1,4 +1,4 @@
-from nltk.corpus import wordnet
+from nltk.corpus import wordnet, gutenberg
 import re
 import time
 import pickle
@@ -9,7 +9,7 @@ from nltk import stem
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.corpus import wordnet as wn
 from classes import Gender
-from tri_gram_model import get_most_likely_sentence
+from ngram import n_gram
 
 
 import logging
@@ -175,7 +175,8 @@ def build_sentence(list_of_lists):
                     article_check = False
             words.append(built_words)
     print("############# WORDS: \n", words)
-    sentence = get_most_likely_sentence(words, .1)
+    n_g = n_gram(5, gutenberg)
+    sentence = n_g.get_most_likely_sentence(words, .1)
     print(sentence, '\n')
 
 
@@ -216,13 +217,16 @@ words = [word_1, word_2, word_3, word_4, word_5]
 
 build_sentence(words)
 
-sentence_2 = [[15221], [12888], [15991, 15666, 8993], [12888, 8560], [12843, 9003], [14164, 12339, 8996],
-              [12367], [15772, 8998], [16161, 9011], [15474, 14947], [15471, 8993]]
-
-build_sentence(sentence_2)
+# sentence_2 = [[15221], [12888], [15991, 15666, 8993], [12888, 8560], [12843, 9003], [14164, 12339, 8996],
+#               [12367], [15772, 8998], [16161, 9011], [15474, 14947], [15471, 8993]]
+#
+# build_sentence(sentence_2)
 
 sentence_3 = [[12888, 8560], [12339, 13901, 8993], [14647, 8998], [16161, 14164, 12339, 14947, 9011]]
 build_sentence(sentence_3)
+
+i_have_two = [[16161, 8497], [24912, 8993], [8498], [25561], [14188]]
+build_sentence(i_have_two)
 
 # st = LancasterStemmer()
 # #
