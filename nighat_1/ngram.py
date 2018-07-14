@@ -98,13 +98,13 @@ class n_gram:
 
         len_l_of_l = len(list_of_lists)
         for n in range(len_l_of_l):
-            print("Length of list_of_lists = ", len(list_of_lists))
+            # print("Length of list_of_lists = ", len(list_of_lists))
             # create a list of indexes for each position
             # n is the number of word postions
             len_l_of_l_n = len(list_of_lists[n])
             len_of_l_of_i = len(list_of_indexes)
 
-            print("Length of list_of_indexes = ", len_of_l_of_i)
+            # print("Length of list_of_indexes = ", len_of_l_of_i)
             temp_list = [None] * (len_of_l_of_i * len_l_of_l_n)
 
             index = 0
@@ -116,10 +116,10 @@ class n_gram:
             list_of_indexes = temp_list
 
         for i, ind in enumerate(list_of_indexes):
-            print(self.get_combo_from_indeces(ind, list_of_lists))
+            # print(self.get_combo_from_indeces(ind, list_of_lists))
             combinations[i] = self.get_combo_from_indeces(ind, list_of_lists)
-        print("List of indexes: ", list_of_indexes)
-        print("List of combos: ", combinations)
+        # print("List of indexes: ", list_of_indexes)
+        # print("List of combos: ", combinations)
 
         return combinations
 
@@ -127,10 +127,9 @@ class n_gram:
     def get_most_likely_n_gram(self, n_gram_list):
         probabilities = [None] * len(n_gram_list)
         for i, gram in enumerate(n_gram_list):
-            print("Gram: ", gram)
             probabilities[i] = (self.get_n_gram_probability(gram), gram)
+            probabilities = [x for x in probabilities if (type(x) is not None)]
         probabilities = sorted(probabilities, key=lambda x: x[0])
-        print("All probabilities: ", probabilities)
         return probabilities[-1]
 
 
@@ -141,8 +140,8 @@ class n_gram:
         slice_end = self.n
         first_n_words = list_of_lists[:slice_end]
         first_n_words = self.get_most_likely_n_gram(self.get_combos(first_n_words))
-        return_list[:slice_end] = first_n_words
-        print(first_n_words)
+        return_list[:slice_end] = first_n_words[1]
+        print("first N words: ", first_n_words)
 
         while slice_end < len(list_of_lists):
             slice_end += 1
@@ -152,11 +151,9 @@ class n_gram:
             combos = [None] * (len(list_of_lists[slice_end - 1]))
             combo_index = 0
             temp_n_gram = [None] * (self.n)
-            print("L of L: ", list_of_lists[slice_end - 1])
             for word in list_of_lists[slice_end - 1]:
-                print("Word: ", word)
                 temp_n_gram = return_list[slice_start:slice_end - 1] + [word]
-                combos[combo_index] = (self.get_most_likely_n_gram(temp_n_gram), word)
+                combos[combo_index] = (self.get_n_gram_probability(temp_n_gram), word)
                 combo_index += 1
             combos = sorted(combos, key=lambda x: x[0])
             return_list[slice_end - 1] = combos[-1][1]

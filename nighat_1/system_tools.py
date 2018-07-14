@@ -181,8 +181,9 @@ def build_sentence(list_of_lists):
                     article_check = False
             words.append(built_words)
     print("############# WORDS: \n", words)
-    n_g = n_gram(3)
+    n_g = n_gram(4)
     n_g.load_n_gram()
+    print("WORDS::::: ", words)
     sentence = n_g.get_most_likely_sentence(words)
     print(sentence, '\n')
 
