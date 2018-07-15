@@ -4,10 +4,15 @@ This is a program that will translate [Blissymbolics](http://www.blissymbolics.o
 
 
 #### Example 
-The program can take the [following symbols](nighat_1/documentation/images/ex_for_a_boy.JPG), and output: 
+To give an example of what the program can do, it can take the [following symbols](nighat_1/documentation/images/ex_for_a_boy.JPG), and output: 
 ```
 for a boy and his family
-``` 
+```
+
+The program is still in development, specifically in the following areas:
+- morphological realization
+- language model
+- optimization
 
 #### Structure
 Most of the classes used in the system are included in the *classes.py* file, 
