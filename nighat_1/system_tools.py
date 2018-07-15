@@ -1,4 +1,4 @@
-from nltk.corpus import wordnet, gutenberg
+from nltk.corpus import wordnet, gutenberg, brown, conll2000
 import re
 import time
 import pickle
@@ -181,8 +181,10 @@ def build_sentence(list_of_lists):
                     article_check = False
             words.append(built_words)
     print("############# WORDS: \n", words)
-    n_g = n_gram(4)
-    n_g.load_n_gram()
+    n_g = n_gram(3, .01)
+    n_g.read_corpus(gutenberg)
+    n_g.read_corpus(brown)
+    n_g.read_corpus(conll2000)
     print("WORDS::::: ", words)
     sentence = n_g.get_most_likely_sentence(words)
     print(sentence, '\n')
