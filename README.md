@@ -1,6 +1,7 @@
 # nighat
-This is a program that will translate [Blissymbolics](http://www.blissymbolics.org/) to English sentences. Blissymbolics is > Blissymbolics is a semantic graphical language that is currently composed of more than 5000 authorized symbols - Bliss-characters and Bliss-words. It is a generative language that allows its users to create new Bliss-words as needed. It is used by individuals with severe speech and physical impairments around the world, but also by others for language learning and support, or just for the fascination and joy of this unique language representation. 
-For more information on Blissymbolics. 
+This is a program that will translate [Blissymbolics](http://www.blissymbolics.org/) to English sentences. From the Blissymbolics website:
+> Blissymbolics is a semantic graphical language that is currently composed of more than 5000 authorized symbols - Bliss-characters and Bliss-words. It is a generative language that allows its users to create new Bliss-words as needed. It is used by individuals with severe speech and physical impairments around the world, but also by others for language learning and support, or just for the fascination and joy of this unique language representation. For more information on Blissymbolics. 
+
 
 #### Example 
 The program can take the [following symbols](nighat_1/documentation/images/ex_for_a_boy.JPG), and output: 
