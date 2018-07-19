@@ -1,3 +1,4 @@
+
 from nltk.corpus import wordnet, gutenberg, brown, conll2000
 import re
 import time
@@ -116,6 +117,7 @@ def build_word(ids):
     indicator = False
     word_list, gender = id_to_word(ids, False)
     for i,list in enumerate(word_list):
+        print(list)
         for j, word in enumerate(list):
             if "indicator" in word:
                 word_list = word_list[0:i] + word_list[i + 1::]
@@ -225,18 +227,30 @@ word_4 = [16161, 8499, 24676]
 word_5 = [15416, 16420, 16420, 18269]
 words = [word_1, word_2, word_3, word_4, word_5]
 
-build_sentence(words)
+book_1 = open("test_sentences/the_blissymbol_opposite_series.txt")
 
-# sentence_2 = [[15221], [12888], [15991, 15666, 8993], [12888, 8560], [12843, 9003], [14164, 12339, 8996],
-#               [12367], [15772, 8998], [16161, 9011], [15474, 14947], [15471, 8993]]
+lines = []
+
+for i, line in enumerate(book_1):
+    l = str(line).split(' ')
+    for j, word in enumerate(l):
+        l[j] = str(word).split(',')
+        l[j] = [int(x.strip()) for x in l[j] if x is not '\n']
+    lines.append(l)
+    build_sentence(l)
+
+# build_sentence(words)
 #
-# build_sentence(sentence_2)
-
-sentence_3 = [[12888, 8560], [12339, 13901, 8993], [14647, 8998], [16161, 14164, 12339, 14947, 9011]]
-build_sentence(sentence_3)
-
-i_have_two = [[16161, 8497], [24912, 8993], [8498], [25561], [14188]]
-build_sentence(i_have_two)
+# # sentence_2 = [[15221], [12888], [15991, 15666, 8993], [12888, 8560], [12843, 9003], [14164, 12339, 8996],
+# #               [12367], [15772, 8998], [16161, 9011], [15474, 14947], [15471, 8993]]
+# #
+# # build_sentence(sentence_2)
+#
+# # sentence_3 = [[12888, 8560], [12339, 13901, 8993], [14647, 8998], [16161, 14164, 12339, 14947, 9011]]
+# build_sentence(sentence_3)
+#
+# i_have_two = [[16161, 8497], [24912, 8993], [8498], [25561], [14188]]
+# build_sentence(i_have_two)
 
 # st = LancasterStemmer()
 # #
