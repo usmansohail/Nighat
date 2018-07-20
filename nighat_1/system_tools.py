@@ -1,4 +1,3 @@
-
 from nltk.corpus import wordnet, gutenberg, brown, conll2000
 import re
 import time
@@ -12,6 +11,9 @@ from nltk.corpus import wordnet as wn
 from classes import Gender
 from ngram import n_gram
 import logging
+
+logging.basicConfig(filename='logs/log1.txt', filemode='w', level=logging.DEBUG)
+
 
 #TODO ========= optimize code
 #TODO ========= re organize code
@@ -117,10 +119,10 @@ def build_word(ids):
     indicator = False
     word_list, gender = id_to_word(ids, False)
     for i,list in enumerate(word_list):
-        print(list)
         for j, word in enumerate(list):
             if "indicator" in word:
                 word_list = word_list[0:i] + word_list[i + 1::]
+                i -= 1
                 indicator = True
                 if "indicator_(possessive" in word:
                     # print(handle_possessive(word_list, gender))
@@ -129,8 +131,11 @@ def build_word(ids):
                     return handle_time(word_list, 'past')
                 if "future" in word:
                     return handle_time(word_list, 'future')
-                if "plural" in words:
+                if "plural" in word:
                     return handle_plural(word_list)
+                if "action" in word:
+                    if "live" in word_list[i - 1][0]:
+                        return ['is']
                 else:
                     list[j] = ' '
 
@@ -183,98 +188,10 @@ def build_sentence(list_of_lists):
                     article_check = False
             words.append(built_words)
     print("############# WORDS: \n", words)
-    n_g = n_gram(3, .01)
-    n_g.read_corpus(gutenberg)
-    n_g.read_corpus(brown)
-    n_g.read_corpus(conll2000)
+    n_g = n_gram(3, .06)
+    n_g.load_n_gram()
     print("WORDS::::: ", words)
     sentence = n_g.get_most_likely_sentence(words)
     print(sentence, '\n')
 
 
-builder = build_word_from_composition()
-
-t = [12613, 14390]
-temp_list = [8998, 13867]
-temp_list_2 = [13867, 8998]
-
-he_she = [16161, 8499]
-his_hers = [14688, 24676]
-
-word_parts = [t, temp_list, temp_list_2]
-# for l in word_parts:
-#     composition = ""
-#     for i, id in enumerate(l):
-#         if i < len(l) - 1:
-#             composition +=
-# print(builder.get_symbol(temp_list).words)
-# print(builder.get_symbol(temp_list_2).words)
-# print("He, she: ", builder.get_symbol(he_she).words)
-# print("His, hers: ", builder.get_symbol(his_hers).words)
-
-# id_to_word(t)
-# id_to_word(temp_list)
-# id_to_word(temp_list_2)
-# id_to_word(he_she)
-# id_to_word(his_hers)
-tt = [16161, 8499, 24676]
-build_word(tt)
-
-word_1 = [14382]
-word_2 = [12888, 8560]
-word_3 = [12374]
-word_4 = [16161, 8499, 24676]
-word_5 = [15416, 16420, 16420, 18269]
-words = [word_1, word_2, word_3, word_4, word_5]
-
-book_1 = open("test_sentences/the_blissymbol_opposite_series.txt")
-
-lines = []
-
-for i, line in enumerate(book_1):
-    l = str(line).split(' ')
-    for j, word in enumerate(l):
-        l[j] = str(word).split(',')
-        l[j] = [int(x.strip()) for x in l[j] if x is not '\n']
-    lines.append(l)
-    build_sentence(l)
-
-# build_sentence(words)
-#
-# # sentence_2 = [[15221], [12888], [15991, 15666, 8993], [12888, 8560], [12843, 9003], [14164, 12339, 8996],
-# #               [12367], [15772, 8998], [16161, 9011], [15474, 14947], [15471, 8993]]
-# #
-# # build_sentence(sentence_2)
-#
-# # sentence_3 = [[12888, 8560], [12339, 13901, 8993], [14647, 8998], [16161, 14164, 12339, 14947, 9011]]
-# build_sentence(sentence_3)
-#
-# i_have_two = [[16161, 8497], [24912, 8993], [8498], [25561], [14188]]
-# build_sentence(i_have_two)
-
-# st = LancasterStemmer()
-# #
-# start1 = int(round(time.time() * 1000))
-# print("###########", start1)
-# print(st.stem('running'))
-# print(st.stem('action'))
-# print(st.stem('question'))
-# print(st.stem('divide'))
-# print(st.stem('ran'))
-# print(st.stem('abide'))
-# print(st.stem('formal'))
-#
-# time2 = int(round(time.time() * 1000))
-# print("############", time2 - start1)
-# # wn.morphy seems to perform better but also take much longer
-# print(wn.morphy('denied', wn.VERB))
-# print(wn.morphy('divided', ))
-# print(wn.morphy('abide'))
-# print(wn.morphy('action'))
-# print(wn.morphy('running'))
-# print(wn.morphy('greener', wn.ADJ))
-#
-#
-# time3 = int(round(time.time() * 1000))
-# print("############", time3 - time2)
-#

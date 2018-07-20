@@ -6,12 +6,20 @@ from nltk.corpus import gutenberg, brown, conll2000
 import cmath
 import pickle
 import string
+import logging
+
+# setup logger
+# logging.basicConfig(filename='logs/log1.txt', filemode='w', level=logging.DEBUG)
+
 
 #TODO: optimize for time
+#TODO: log stuff
 
 class n_gram:
 
     def __init__(self, n, seed):
+        logging.info('\n\n\n ### %s -Gram Info:', n)
+
         self.n = n
         self.count_dictionary = {}
         self.n_grams = {}
@@ -29,6 +37,7 @@ class n_gram:
         self.num_words = pickle.load(open('num_words.p', 'rb'))
 
     def read_corpus(self, corpus):
+        logging.info('Reading corpus')
         self.corpus = corpus.sents()
         self.num_words += len(corpus.words())
         for sentence in self.corpus:
@@ -53,13 +62,15 @@ class n_gram:
         pickle.dump(self.n_grams, open('n_grams.p', 'wb'))
         pickle.dump(self.num_words, open('num_words.p', 'wb'))
 
+        logging.info('Done reading corpus')
+
     def interpolation_setup(self, seed):
         self.interpolation_lamdas = {}
         lambda_start = 1
         for i in range(self.n, 0, -1):
             self.interpolation_lamdas[i] = lambda_start
             lambda_start *= seed
-        print(self.interpolation_lamdas)
+        logging.info("Interpolation lambdas: %s", self.interpolation_lamdas)
 
     def get_gram_counts(self, words):
         n_gram_counts = {}
@@ -85,8 +96,11 @@ class n_gram:
         counts = self.get_gram_counts(words)
         probability = 0
         for i in range(1, self.n + 1):
-            if not (counts[i][0] == 0 or counts[i][1] == 0):
-                probability += self.interpolation_lamdas[i] * float((counts[i][0] / counts[i][1]))
+            try:
+                if not (counts[i][0] == 0 or counts[i][1] == 0):
+                    probability += self.interpolation_lamdas[i] * float((counts[i][0] / counts[i][1]))
+            except KeyError:
+                pass
         return float(probability)
 
     def get_sentence_probability(self, sentence):
@@ -105,8 +119,14 @@ class n_gram:
 
     def get_combo_from_indeces(self, indecs, list_of_ists):
         temp_combo = [None] * (len(indecs))
+        num_nulls = 0
         for i in range(len(indecs)):
-            temp_combo[i] = list_of_ists[i][indecs[i]]
+            temp_val = list_of_ists[i][indecs[i]]
+            temp_combo[i] = temp_val
+            if temp_val is '':
+                num_nulls += 1
+        for i in range(num_nulls):
+            temp_combo.remove('')
         return temp_combo
 
 
@@ -192,20 +212,15 @@ class n_gram:
                         combo_2_index += 1
                     combos_2 = sorted(combos_2, key=lambda x: x[0])
                     most_likely_combo_2 = combos_2[-1]
-                    print("Most likely combo: ", most_likely_combo_2)
                 else:
                     temp_n_gram = return_list[slice_start:slice_end - 1] + [word]
                     combos[combo_index] = (self.get_n_gram_probability(temp_n_gram), word)
                     combo_index += 1
             combos = sorted(combos, key=lambda x: x[0])
-            print("most likely combo 2: ", most_likely_combo_2)
-            print("most likely combo 1: ", combos[-1])
             if most_likely_combo_2[0] > combos[-1][0]:
                 return_list[slice_end - 1] = most_likely_combo_2[1]
-                print("List of list pre: ", list_of_lists)
                 list_of_lists = list_of_lists[:slice_end] + list_of_lists[slice_end + 1:]
                 return_list = return_list[:slice_end] + return_list[slice_end + 1:]
-                print("List of list post: ", list_of_lists)
             else:
                 return_list[slice_end - 1] = combos[-1][1]
 
@@ -352,32 +367,5 @@ class n_gram:
         #
         #
         # return probs[-1]
-
-
-n_g = n_gram(3, .01)
-# n_g.read_corpus(gutenberg)
-# n_g.read_corpus(brown)
-# n_g.read_corpus(conll2000)
-n_g.load_n_gram()
-# print(n_g.get_gram_counts(['emma', 'by', 'jane']))
-# print(n_g.get_gram_counts(['for', 'a', 'boy']))
-# print(n_g.get_gram_counts(['for', 'a', 'lasdd']))
-# print(n_g.get_n_gram_probability(['i', 'want', 'water']))
-# print(n_g.get_n_gram_probability(['i', 'want', 'waffles']))
-# print(n_g.get_n_gram_probability(['for', 'a', 'boy']))
-# print(n_g.get_n_gram_probability(['for', 'a', 'lad']))
-# print(n_g.get_n_gram_probability(['for', 'a', 'sfsdf']))
-# n_g.get_dictionary('i', 2)
-# n_g.read_corpus()
-# print(n_g.get_n_gram_probability(['I', 'love', 'you']))
-# sentence_1 = ['I', 'was', 'walking', 'down', 'the', 'street']
-# sentence_2 = ['I', 'was', 'walking', 'down', 'the', 'stupid']
-# print("prob for sentence: ", sentence_1, " = ", n_g.get_sentence_probability(sentence_1))
-# print("prob for sentence: ", sentence_2, " = ", n_g.get_sentence_probability(sentence_2))
-
-
-# print(n_g.get_combos([['a1', 'a2'], ['b1', 'b2', 'b3'], ['c1', 'c2', 'c3']]))
-print(n_g.get_most_likely_sentence([['for', 'inorder'], ['a', '', 'the'], ['boy', 'lad'], ['and'], ['his'], ['', 'the'],
-                                    ['family']]))
 
 

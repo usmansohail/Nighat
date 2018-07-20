@@ -1,0 +1,19 @@
+INFO:nlglib:initialising NLG library
+DEBUG:nlglib.realisation.simplenlg.client:Starting SimplenlgClient(nlg.kutlak.info:40000)
+INFO:root: 3 -gram
+INFO:root:Interpolation lambdas: {3: 1, 2: 0.01, 1: 0.0001}
+INFO:root:Reading corpus
+INFO:root:Done reading corpus
+
+
+
+INFO:root:Reading corpus
+INFO:root:Done reading corpus
+
+
+
+INFO:root:Reading corpus
+INFO:root:Done reading corpus
+
+
+
