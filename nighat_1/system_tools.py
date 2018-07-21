@@ -187,7 +187,6 @@ def build_sentence(list_of_lists):
                     words.append(['', 'a', 'the'])
                     article_check = False
             words.append(built_words)
-    print("############# WORDS: \n", words)
     n_g = n_gram(3, .06)
     n_g.load_n_gram()
     print("WORDS::::: ", words)

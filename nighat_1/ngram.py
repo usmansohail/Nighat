@@ -25,6 +25,7 @@ class n_gram:
         self.n_grams = {}
         self.corpus = None
         self.regex = re.compile(r"^(a-zA-Z0-9)")
+        self.interpolation_lamdas = {}
         self.interpolation_setup(seed)
         self.num_words = 0
 
@@ -41,7 +42,8 @@ class n_gram:
         self.corpus = corpus.sents()
         self.num_words += len(corpus.words())
         for sentence in self.corpus:
-            temp_list = [str(x).lower() for x in sentence if x is not ('.' or ',' or '?' or ';' or ':' or '%' or '*')]
+            temp_list = [str(x).lower() for x in sentence if x is not ('.' or ',' or '?' or ';' or ':' or '%' or '*' or
+                                                                       '[' or ']')]
 
             for n in range(1, self.n + 1):
                 sent_ngrams = ngrams(temp_list, n)
@@ -65,7 +67,6 @@ class n_gram:
         logging.info('Done reading corpus')
 
     def interpolation_setup(self, seed):
-        self.interpolation_lamdas = {}
         lambda_start = 1
         for i in range(self.n, 0, -1):
             self.interpolation_lamdas[i] = lambda_start
@@ -129,23 +130,27 @@ class n_gram:
             temp_combo.remove('')
         return temp_combo
 
+    def get_vals_from_indeces(self, index_list, list_of_lists):
+        return_list = [None] * len(index_list)
+        for i, index in enumerate(index_list):
+            return_list[i] = list_of_lists[i][index_list[i]]
+        return return_list
 
-    def get_combos(self, list_of_lists):
+    def get_combos(self, list_of_lists, length):
         # count the number of combinations by multiplying length of all word_lists
         len_of_combos = 1
         for word_slot in list_of_lists:
             len_of_combos *= len(word_slot)
 
         # track the combinations
-        combinations = [None] * (len_of_combos)
-
-        print("Length of combos: = ", len_of_combos)
+        combinations = []
 
         list_of_indexes = [[]]
         combo_index = 0
+        queue = []
 
         len_l_of_l = len(list_of_lists)
-        for n in range(len_l_of_l):
+        for n in range(length):
             # print("Length of list_of_lists = ", len(list_of_lists))
             # create a list of indexes for each position
             # n is the number of word postions
@@ -159,18 +164,29 @@ class n_gram:
             for s in range(len_l_of_l_n):
                 for i in list_of_indexes:
                     temp_index = i + [s]
-                    temp_list[index] = temp_index
-                    index += 1
+                    temp_val = self.get_vals_from_indeces(temp_index, list_of_lists)
+                    if '' not in temp_val:
+                        temp_list[index] = temp_index
+                        index += 1
+                    else:
+                        temp_queue_list = list_of_lists[:n] + list_of_lists[n + 1:]
+                        if temp_queue_list not in queue:
+                            queue.append(temp_queue_list)
+
+            while None in temp_list:
+                temp_list.remove(None)
             list_of_indexes = temp_list
+
+        for l in queue:
+            combinations += self.get_combos(l, length)
 
         for i, ind in enumerate(list_of_indexes):
             # print(self.get_combo_from_indeces(ind, list_of_lists))
-            combinations[i] = self.get_combo_from_indeces(ind, list_of_lists)
+            combinations.append(self.get_vals_from_indeces(ind, list_of_lists))
         # print("List of indexes: ", list_of_indexes)
         # print("List of combos: ", combinations)
 
         return combinations
-
 
     def get_most_likely_n_gram(self, n_gram_list):
         probabilities = [None] * len(n_gram_list)
@@ -180,14 +196,21 @@ class n_gram:
         probabilities = sorted(probabilities, key=lambda x: x[0])
         return probabilities[-1]
 
-
-
     def get_most_likely_sentence(self, list_of_lists):
         return_list = [None] * (len(list_of_lists))
         slice_start = 0
         slice_end = self.n
-        first_n_words = list_of_lists[:slice_end]
-        first_n_words = self.get_most_likely_n_gram(self.get_combos(first_n_words))
+
+        # count the number of potential blank words in the first n words
+        not_blanks = 0
+        i = 0
+        while not_blanks < self.n:
+            if '' not in list_of_lists[i]:
+                not_blanks += 1
+            i += 1
+
+        first_n_words = list_of_lists[:i]
+        first_n_words = self.get_most_likely_n_gram(self.get_combos(first_n_words, self.n))
         return_list[:slice_end] = first_n_words[1]
         print("first N words: ", first_n_words)
 
@@ -226,70 +249,6 @@ class n_gram:
 
         return return_list
 
-        # # iterate over all combinations of the first n words
-        # # for i, word_slot in enumerate(first_n_words):
-        #
-        # # get all possible words for each symbol
-        # total_combinations = 1
-        #
-        # # get the n-gram model
-        # for list in list_of_lists:
-        #     total_combinations *= len(list)
-        #
-        #
-        #
-        # list_of_indexes = [[]]
-        # len_l_of_l = len(list_of_lists)
-        # for n in range(len_l_of_l):
-        #     # create a list of indexes for each position
-        #     # n is the number of word postions sent in
-        #     len_l_of_l_n = len(list_of_lists[n])
-        #     len_of_l_of_i = len(list_of_indexes)
-        #     temp_list = [None] * (len_of_l_of_i * len_l_of_l_n)
-        #
-        #     index = 0
-        #     for s in range(len_l_of_l_n):
-        #         for i in list_of_indexes:
-        #             temp_list[index] = i + [s]
-        #             index += 1
-        #     list_of_indexes = temp_list
-        #
-        # len_l_of_i = len(list_of_indexes)
-        #
-        # # build all the combinations of words
-        # combinations = [None] * (len_l_of_i)
-        # combinations_index = 0
-        # for l in range(len(list_of_indexes)):
-        #     combo = [None] * (len(list_of_indexes[l]))
-        #     combo_index = 0
-        #     for index in range(len(list_of_indexes[l])):
-        #         combo[combo_index] = list_of_lists[index][list_of_indexes[l][index]]
-        #         combo_index += 1
-        #     combinations[combinations_index] = combo
-        #     combinations_index += 1
-        #     # create each combination of words
-        #
-        # # get the probabilities of the sentences
-        # # print("####################### SORTED PROBABILITIES WITH ALPHA = ", alpha)
-        # probs = [None] * (len_l_of_i)
-        # for i, combo in enumerate(combinations):
-        #     probs[i] = (self.get_sentence_probability(combo), combo)
-        #
-        # # sort by probabilities
-        # print(probs)
-        # probs = sorted(probs, key=lambda combinations: float(combinations[0]))
-        # print(probs)
-        # #print(probs)
-        #
-        # # for prob, sentence in probs:
-        #     # print("probability for words: ", sentence, " = ", prob)
-        #
-        #
-        #
-        # return probs[-1]
-
-
-
     def get_dictionary(self, word, n):
         temp_dict = self.n_grams[n][word]
         keys = sorted(dict(temp_dict).keys())
@@ -300,72 +259,5 @@ class n_gram:
 
 
 
-
-
-
-
-
-        # iterate over all combinations of the first n words
-        # for i, word_slot in enumerate(first_n_words):
-
-
-        # # get all possible words for each symbol
-        # total_combinations = 1
-        #
-        # # get the n-gram model
-        # for list in list_of_lists:
-        #     total_combinations *= len(list)
-        #
-        #
-        #
-        # list_of_indexes = [[]]
-        # len_l_of_l = len(list_of_lists)
-        # for n in range(len_l_of_l):
-        #     # create a list of indexes for each position
-        #     # n is the number of word postions sent in
-        #     len_l_of_l_n = len(list_of_lists[n])
-        #     len_of_l_of_i = len(list_of_indexes)
-        #     temp_list = [None] * (len_of_l_of_i * len_l_of_l_n)
-        #
-        #     index = 0
-        #     for s in range(len_l_of_l_n):
-        #         for i in list_of_indexes:
-        #             temp_list[index] = i + [s]
-        #             index += 1
-        #     list_of_indexes = temp_list
-        #
-        # len_l_of_i = len(list_of_indexes)
-        #
-        # # build all the combinations of words
-        # combinations = [None] * (len_l_of_i)
-        # combinations_index = 0
-        # for l in range(len(list_of_indexes)):
-        #     combo = [None] * (len(list_of_indexes[l]))
-        #     combo_index = 0
-        #     for index in range(len(list_of_indexes[l])):
-        #         combo[combo_index] = list_of_lists[index][list_of_indexes[l][index]]
-        #         combo_index += 1
-        #     combinations[combinations_index] = combo
-        #     combinations_index += 1
-        #     # create each combination of words
-        #
-        # # get the probabilities of the sentences
-        # # print("####################### SORTED PROBABILITIES WITH ALPHA = ", alpha)
-        # probs = [None] * (len_l_of_i)
-        # for i, combo in enumerate(combinations):
-        #     probs[i] = (self.get_sentence_probability(combo), combo)
-        #
-        # # sort by probabilities
-        # print(probs)
-        # probs = sorted(probs, key=lambda combinations: float(combinations[0]))
-        # print(probs)
-        # #print(probs)
-        #
-        # # for prob, sentence in probs:
-        #     # print("probability for words: ", sentence, " = ", prob)
-        #
-        #
-        #
-        # return probs[-1]
 
 
