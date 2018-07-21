@@ -14,7 +14,7 @@ from classes import levenshtein
 
 
 #TODO: optimize for time
-#TODO: log stuff
+#TODO: log each n-gram count explicitly 
 
 class n_gram:
 

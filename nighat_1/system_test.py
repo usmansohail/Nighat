@@ -43,7 +43,7 @@ def test_ngram():
 
 
 # test_ngram()
-# test_builder()
+test_builder()
 
 
 

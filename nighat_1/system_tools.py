@@ -31,6 +31,7 @@ class SystemTools:
     def __init__(self):
         self.realise = Realiser(host='nlg.kutlak.info')
         self.ngram = n_gram(3, .06)
+        self.ngram.manual_interpolation([.16, .16, .68])
         self.ngram.load_n_gram()
 
     def get_symbols(self):
@@ -152,7 +153,7 @@ class SystemTools:
                     temp = temp.replace('_', '')
                     temp = temp.replace('-', '')
                     if temp != 'to':
-                        temp = temp.replace('to', '')
+                        temp = temp.replace('(to', '')
                     if temp != 'be':
                         temp = temp.replace('be', '')
 
@@ -214,7 +215,7 @@ class SystemTools:
             return_list[i] = list_of_lists[i][index_list[i]]
         return return_list
 
-    def get_combos(self, list_of_lists, length):
+    def get_combos(self, list_of_lists, length, depth=0):
         # count the number of combinations by multiplying length of all word_lists
         len_of_combos = 1
         for word_slot in list_of_lists:
@@ -222,6 +223,7 @@ class SystemTools:
 
         # track the combinations
         combinations = []
+        num_skipped = depth
 
         list_of_indexes = [[]]
         combo_index = 0
@@ -256,11 +258,12 @@ class SystemTools:
             list_of_indexes = temp_list
 
         for l in queue:
-            combinations += self.get_combos(l, length)
+            temp_combos = self.get_combos(l, length, num_skipped + 1)
+            combinations += temp_combos
 
         for i, ind in enumerate(list_of_indexes):
             # print(self.get_combo_from_indeces(ind, list_of_lists))
-            combinations.append(self.get_vals_from_indeces(ind, list_of_lists))
+            combinations.append((self.get_vals_from_indeces(ind, list_of_lists), num_skipped))
         # print("List of indexes: ", list_of_indexes)
         # print("List of combos: ", combinations)
 
@@ -269,7 +272,7 @@ class SystemTools:
     def get_most_likely_n_gram(self, n_gram_list):
         probabilities = [None] * len(n_gram_list)
         for i, gram in enumerate(n_gram_list):
-            probabilities[i] = (self.ngram.get_n_gram_probability(gram), gram)
+            probabilities[i] = (self.ngram.get_n_gram_probability(gram[0]), gram[0], gram[1])
             probabilities = [x for x in probabilities if (type(x) is not None)]
         probabilities = sorted(probabilities, key=lambda x: x[0])
         return probabilities[-1]
@@ -288,9 +291,15 @@ class SystemTools:
             i += 1
 
         first_n_words = list_of_lists[:i]
-        first_n_words = self.get_most_likely_n_gram(self.get_combos(first_n_words, self.ngram.n))
+        combos = self.get_combos(first_n_words, self.ngram.n)
+        first_n_words = self.get_most_likely_n_gram(combos)
+        offset = first_n_words[2]
         return_list[:slice_end] = first_n_words[1]
         print("first N words: ", first_n_words)
+
+        if offset > 0:
+            slice_end += (offset)
+            slice_start += (offset)
 
         while slice_end < len(list_of_lists):
             slice_end += 1
