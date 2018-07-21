@@ -2,11 +2,12 @@ import cmath
 import re
 import nltk
 from nltk.util import ngrams
-from nltk.corpus import gutenberg, brown, conll2000
+from nltk.corpus import gutenberg, brown, conll2000, webtext
 import cmath
 import pickle
 import string
 import logging
+from classes import levenshtein
 
 # setup logger
 # logging.basicConfig(filename='logs/log1.txt', filemode='w', level=logging.DEBUG)
@@ -73,6 +74,12 @@ class n_gram:
             lambda_start *= seed
         logging.info("Interpolation lambdas: %s", self.interpolation_lamdas)
 
+    def manual_interpolation(self, constants):
+        if len(constants) != self.n:
+            raise ValueError("the number of constants does not match n")
+        for i, c in enumerate(constants):
+            self.interpolation_lamdas[i + 1] = c
+
     def get_gram_counts(self, words):
         n_gram_counts = {}
         for i in range(1, self.n + 1):
@@ -119,9 +126,12 @@ class n_gram:
         return return_prob
 
 
+    def test_n_gram(self):
+        numerator = 0.0
+        denominator = 0.0
 
+        for sent in webtext.sents():
+            numerator += self.get_sentence_probability(sent)
+            denominator += 1
 
-
-
-
-
+        return numerator / denominator

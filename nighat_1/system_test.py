@@ -1,4 +1,6 @@
+import pickle
 from system_tools import SystemTools
+from ngram import n_gram
 
 def test_builder():
     # create the blissymbolics builder
@@ -20,73 +22,28 @@ def test_builder():
             print("Input: ", l)
             system_tools.build_sentence(l)
 
-# def get_vals_from_indeces(index_list, list_of_lists):
-#     return_list = [None] * len(index_list)
-#     for i, index in enumerate(index_list):
-#         return_list[i] = list_of_lists[i][index_list[i]]
-#     return return_list
-#
-#
-# def get_combos(list_of_lists, length):
-#     # count the number of combinations by multiplying length of all word_lists
-#     len_of_combos = 1
-#     for word_slot in list_of_lists:
-#         len_of_combos *= len(word_slot)
-#
-#     # track the combinations
-#     combinations = []
-#
-#     list_of_indexes = [[]]
-#     combo_index = 0
-#     queue = []
-#
-#     len_l_of_l = len(list_of_lists)
-#     for n in range(length):
-#         # print("Length of list_of_lists = ", len(list_of_lists))
-#         # create a list of indexes for each position
-#         # n is the number of word postions
-#         len_l_of_l_n = len(list_of_lists[n])
-#         len_of_l_of_i = len(list_of_indexes)
-#
-#         # print("Length of list_of_indexes = ", len_of_l_of_i)
-#         temp_list = [None] * (len_of_l_of_i * len_l_of_l_n)
-#
-#         index = 0
-#         for s in range(len_l_of_l_n):
-#             for i in list_of_indexes:
-#                 temp_index = i + [s]
-#                 temp_val = get_vals_from_indeces(temp_index, list_of_lists)
-#                 if '' not in temp_val:
-#                     temp_list[index] = temp_index
-#                     index += 1
-#                 else:
-#                     temp_queue_list = list_of_lists[:n] + list_of_lists[n + 1:]
-#                     if temp_queue_list not in queue:
-#                         queue.append(temp_queue_list)
-#
-#         while None in temp_list:
-#             temp_list.remove(None)
-#         list_of_indexes = temp_list
-#
-#     for l in queue:
-#         combinations += get_combos(l, length)
-#
-#     for i, ind in enumerate(list_of_indexes):
-#         # print(self.get_combo_from_indeces(ind, list_of_lists))
-#         combinations.append(get_vals_from_indeces(ind, list_of_lists))
-#     # print("List of indexes: ", list_of_indexes)
-#     # print("List of combos: ", combinations)
-#
-#     return combinations
+def test_ngram():
+    n_g = n_gram(3, .06)
+    n_g.load_n_gram()
+    combinations = [None]  * 1000
+    index = 0
+    for i in range(1, 30, 5):
+        for j in range(i, 60, 5):
+            k = 100 - j - i
+            if index < 1000:
+                n_g.manual_interpolation([i * .01, j * .01, k * .01])
+                combinations[index] = ((i, j, k), n_g.test_n_gram())
+                print("Index: ", index, "combo: ", combinations[index][0], " probability: ", combinations[index][1])
+                index += 1
+    combinations = combinations[:index]
+    combinations = sorted(combinations, key=lambda x: x[1])
+    pickle.dump(combinations, open('pickles/interpolation_constants.p', 'wb'))
+    for c in combinations[-3:]:
+        print(c)
 
 
-# # list_of_lists = [['a', 'b'], ['c', ''], ['d', 'e'], ['f', 'g']]
-# list_of_lists = [['a', 'b'], ['1', ''], ['e', 'f'], ['g', 'h']]
-# print(get_combos(list_of_lists, 3))
-#
-
-
-test_builder()
+# test_ngram()
+# test_builder()
 
 
 
