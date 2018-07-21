@@ -1,8 +1,9 @@
-from system_tools import build_word_from_composition, build_sentence
+from system_tools import SystemTools
 
 def test_builder():
     # create the blissymbolics builder
-    builder = build_word_from_composition()
+    system_tools = SystemTools()
+    builder = system_tools.build_word_from_composition()
 
     # open the file with the test set
     book_1 = open("test_sentences/the_blissymbol_opposite_series.txt")
@@ -17,7 +18,7 @@ def test_builder():
                 l[j] = [int(x.strip()) for x in l[j] if x is not '\n']
             lines.append(l)
             print("Input: ", l)
-            build_sentence(l)
+            system_tools.build_sentence(l)
 
 # def get_vals_from_indeces(index_list, list_of_lists):
 #     return_list = [None] * len(index_list)
