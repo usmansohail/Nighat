@@ -30,9 +30,12 @@ class SystemTools:
 
     def __init__(self):
         self.realise = Realiser(host='nlg.kutlak.info')
-        self.ngram = n_gram(3, .06)
-        self.ngram.manual_interpolation([.16, .16, .68])
+        self.ngram = n_gram(3, .06, logging=True)
+        self.ngram.manual_interpolation([.6, .3, .1])
         self.ngram.load_n_gram()
+        # self.ngram.read_corpus(gutenberg)
+        # self.ngram.read_corpus(brown)
+        # self.ngram.read_corpus(conll2000)
 
     def get_symbols(self):
         return list(pickle.load(open('pickles/syms-2.p', 'rb')))
@@ -154,6 +157,8 @@ class SystemTools:
                     temp = temp.replace('-', '')
                     if temp != 'to':
                         temp = temp.replace('(to', '')
+                    if temp[:3] == 'to ':
+                        temp = temp[3:]
                     if temp != 'be':
                         temp = temp.replace('be', '')
 
@@ -195,6 +200,7 @@ class SystemTools:
                 words.append(built_words)
         print("WORDS::::: ", words)
         sentence = self.get_most_likely_sentence(words)
+        sentence = [x for x in sentence if x is not None]
         print(sentence, '\n')
 
     def get_combo_from_indeces(self, indecs, list_of_ists):
@@ -274,7 +280,7 @@ class SystemTools:
         for i, gram in enumerate(n_gram_list):
             probabilities[i] = (self.ngram.get_n_gram_probability(gram[0]), gram[0], gram[1])
             probabilities = [x for x in probabilities if (type(x) is not None)]
-        probabilities = sorted(probabilities, key=lambda x: x[0])
+        probabilities = sorted(probabilities, key=lambda x: x[0], reverse=True)
         return probabilities[-1]
 
     def get_most_likely_sentence(self, list_of_lists):
@@ -320,13 +326,13 @@ class SystemTools:
                         temp_n_gram = return_list[slice_start:slice_end - 1] + [second_word]
                         combos_2[combo_2_index] = (self.ngram.get_n_gram_probability(temp_n_gram), second_word)
                         combo_2_index += 1
-                    combos_2 = sorted(combos_2, key=lambda x: x[0])
+                    combos_2 = sorted(combos_2, key=lambda x: x[0], reverse=True)
                     most_likely_combo_2 = combos_2[-1]
                 else:
                     temp_n_gram = return_list[slice_start:slice_end - 1] + [word]
                     combos[combo_index] = (self.ngram.get_n_gram_probability(temp_n_gram), word)
                     combo_index += 1
-            combos = sorted(combos, key=lambda x: x[0])
+            combos = sorted(combos, key=lambda x: x[0], reverse=True)
             if most_likely_combo_2[0] > combos[-1][0]:
                 return_list[slice_end - 1] = most_likely_combo_2[1]
                 list_of_lists = list_of_lists[:slice_end] + list_of_lists[slice_end + 1:]

@@ -5,3 +5,1547 @@ INFO:root:
 
  ### 3 -Gram Info:
 INFO:root:Interpolation lambdas: {3: 1, 2: 0.06, 1: 0.0036}
+INFO:root:
+
+########## words: ['for', 'boy', 'and']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         100003          2425357         0.041232        0.600000        5.337048        
+INFO:root:2         36              490             0.073469        0.300000        5.503679        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 14.162654
+INFO:root:
+
+########## words: ['inorderto', 'boy', 'and']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         100003          2425357         0.041232        0.600000        5.337048        
+INFO:root:2         36              490             0.073469        0.300000        5.503679        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 38.561368
+INFO:root:
+
+########## words: ['for', 'lad', 'and']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         100003          2425357         0.041232        0.600000        5.337048        
+INFO:root:2         9               110             0.081818        0.300000        5.348400        
+INFO:root:3         1               20390           0.000049        0.100000        17.637502       
+INFO:root:final sum of probability: 28.322950
+INFO:root:
+
+########## words: ['inorderto', 'lad', 'and']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         100003          2425357         0.041232        0.600000        5.337048        
+INFO:root:2         9               110             0.081818        0.300000        5.348400        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 38.406090
+INFO:root:
+
+########## words: ['for', 'boy', 'also']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2642            2425357         0.001089        0.600000        10.579317       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 24.574848
+INFO:root:
+
+########## words: ['inorderto', 'boy', 'also']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2642            2425357         0.001089        0.600000        10.579317       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 48.973563
+INFO:root:
+
+########## words: ['for', 'lad', 'also']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2642            2425357         0.001089        0.600000        10.579317       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               20390           0.000049        0.100000        17.637502       
+INFO:root:final sum of probability: 36.735144
+INFO:root:
+
+########## words: ['inorderto', 'lad', 'also']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2642            2425357         0.001089        0.600000        10.579317       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 46.818284
+INFO:root:
+
+########## words: ['for', 'boy', 'plus']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 31.549945
+INFO:root:
+
+########## words: ['inorderto', 'boy', 'plus']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.948660
+INFO:root:
+
+########## words: ['for', 'lad', 'plus']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               20390           0.000049        0.100000        17.637502       
+INFO:root:final sum of probability: 43.710241
+INFO:root:
+
+########## words: ['inorderto', 'lad', 'plus']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 53.793382
+INFO:root:
+
+########## words: ['for', 'boy', 'too']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1572            2425357         0.000648        0.600000        11.328346       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 25.323877
+INFO:root:
+
+########## words: ['inorderto', 'boy', 'too']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1572            2425357         0.000648        0.600000        11.328346       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 49.722592
+INFO:root:
+
+########## words: ['for', 'lad', 'too']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1572            2425357         0.000648        0.600000        11.328346       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               20390           0.000049        0.100000        17.637502       
+INFO:root:final sum of probability: 37.484173
+INFO:root:
+
+########## words: ['inorderto', 'lad', 'too']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1572            2425357         0.000648        0.600000        11.328346       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 47.567314
+INFO:root:
+
+########## words: ['for', 'a', 'boy']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         569             2425357         0.000235        0.600000        12.794446       
+INFO:root:2         46              39426           0.001167        0.300000        11.480263       
+INFO:root:3         1               1432            0.000698        0.100000        13.805744       
+INFO:root:final sum of probability: 38.080454
+INFO:root:
+
+########## words: ['inorderto', 'a', 'boy']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         569             2425357         0.000235        0.600000        12.794446       
+INFO:root:2         46              39426           0.001167        0.300000        11.480263       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 51.995352
+INFO:root:
+
+########## words: ['for', 'the', 'boy']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         569             2425357         0.000235        0.600000        12.794446       
+INFO:root:2         80              146719          0.000545        0.300000        12.577734       
+INFO:root:3         1               3599            0.000278        0.100000        15.135308       
+INFO:root:final sum of probability: 40.507489
+INFO:root:
+
+########## words: ['inorderto', 'the', 'boy']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         569             2425357         0.000235        0.600000        12.794446       
+INFO:root:2         80              146719          0.000545        0.300000        12.577734       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 53.092823
+INFO:root:
+
+########## words: ['for', 'a', 'lad']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         116             2425357         0.000048        0.600000        15.088750       
+INFO:root:2         12              39426           0.000304        0.300000        13.418863       
+INFO:root:3         1               1432            0.000698        0.100000        13.805744       
+INFO:root:final sum of probability: 42.313357
+INFO:root:
+
+########## words: ['inorderto', 'a', 'lad']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         116             2425357         0.000048        0.600000        15.088750       
+INFO:root:2         12              39426           0.000304        0.300000        13.418863       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.228256
+INFO:root:
+
+########## words: ['for', 'the', 'lad']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         116             2425357         0.000048        0.600000        15.088750       
+INFO:root:2         43              146719          0.000293        0.300000        13.473397       
+INFO:root:3         1               3599            0.000278        0.100000        15.135308       
+INFO:root:final sum of probability: 43.697456
+INFO:root:
+
+########## words: ['inorderto', 'the', 'lad']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         116             2425357         0.000048        0.600000        15.088750       
+INFO:root:2         43              146719          0.000293        0.300000        13.473397       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.282790
+INFO:root:
+
+########## words: ['and', None, 'his']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21898           2425357         0.009029        0.600000        7.528220        
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               972680          0.000001        0.100000        23.213534       
+INFO:root:final sum of probability: 56.943849
+INFO:root:
+
+########## words: ['and', None, 'their']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         8327            2425357         0.003433        0.600000        8.923150        
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               972680          0.000001        0.100000        23.213534       
+INFO:root:final sum of probability: 58.338779
+INFO:root:
+
+########## words: ['and', None, 'its']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2231            2425357         0.000920        0.600000        10.823256       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               972680          0.000001        0.100000        23.213534       
+INFO:root:final sum of probability: 60.238885
+INFO:root:
+
+########## words: [None, 'his', 'family']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         525             2425357         0.000216        0.600000        12.910558       
+INFO:root:2         43              21845           0.001968        0.300000        10.725716       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 51.356916
+INFO:root:
+
+########## words: [None, 'his', 'couple']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         101             2425357         0.000042        0.600000        15.288520       
+INFO:root:2         1               21845           0.000046        0.300000        16.151981       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 59.161143
+INFO:root:
+
+########## words: [None, 'his', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         2               21845           0.000092        0.300000        15.151981       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 49.552349
+INFO:root:
+
+########## words: [None, 'his', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         6               21845           0.000275        0.300000        13.567019       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 46.071647
+INFO:root:
+
+########## words: ['I', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 48.964763
+INFO:root:
+
+########## words: ['me', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 28.887977
+INFO:root:
+
+########## words: ['myself', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               6               0.166667        0.100000        5.906891        
+INFO:root:final sum of probability: 27.151011
+INFO:root:
+
+########## words: ['I', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 48.964763
+INFO:root:
+
+########## words: ['me', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 28.887977
+INFO:root:
+
+########## words: ['myself', 'have', 'two']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2688            2425357         0.001108        0.600000        10.554414       
+INFO:root:2         22              10901           0.002018        0.300000        10.689707       
+INFO:root:3         1               6               0.166667        0.100000        5.906891        
+INFO:root:final sum of probability: 27.151011
+INFO:root:
+
+########## words: ['I', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 53.311693
+INFO:root:
+
+########## words: ['me', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 33.234907
+INFO:root:
+
+########## words: ['myself', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               6               0.166667        0.100000        5.906891        
+INFO:root:final sum of probability: 31.497941
+INFO:root:
+
+########## words: ['I', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 53.311693
+INFO:root:
+
+########## words: ['me', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 33.234907
+INFO:root:
+
+########## words: ['myself', 'have', '2']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2906            2425357         0.001198        0.600000        10.441912       
+INFO:root:2         1               10901           0.000092        0.300000        15.149138       
+INFO:root:3         1               6               0.166667        0.100000        5.906891        
+INFO:root:final sum of probability: 31.497941
+INFO:root:
+
+########## words: ['have', 'two', 'fatness']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         18              2425357         0.000007        0.600000        17.776806       
+INFO:root:2         1               2629            0.000380        0.300000        13.097264       
+INFO:root:3         1               22              0.045455        0.100000        7.781360        
+INFO:root:final sum of probability: 38.655430
+INFO:root:
+
+########## words: ['have', 'two', 'thickness']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13              2425357         0.000005        0.600000        18.246292       
+INFO:root:2         1               2629            0.000380        0.300000        13.097264       
+INFO:root:3         1               22              0.045455        0.100000        7.781360        
+INFO:root:final sum of probability: 39.124915
+INFO:root:
+
+########## words: ['have', 'two', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         5               2629            0.001902        0.300000        10.775336       
+INFO:root:3         1               22              0.045455        0.100000        7.781360        
+INFO:root:final sum of probability: 25.236421
+INFO:root:
+
+########## words: ['have', 'two', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         9               2629            0.003423        0.300000        9.927339        
+INFO:root:3         1               22              0.045455        0.100000        7.781360        
+INFO:root:final sum of probability: 22.492685
+INFO:root:
+
+########## words: ['two', 'fatness', 'fish']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         334             2425357         0.000138        0.600000        13.563027       
+INFO:root:2         1               12              0.083333        0.300000        5.321928        
+INFO:root:3         1               2480            0.000403        0.100000        14.598053       
+INFO:root:final sum of probability: 33.483008
+INFO:root:
+
+########## words: ['two', 'fatness', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         1               12              0.083333        0.300000        5.321928        
+INFO:root:3         1               2480            0.000403        0.100000        14.598053       
+INFO:root:final sum of probability: 26.599706
+INFO:root:
+
+########## words: ['two', 'fatness', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1               12              0.083333        0.300000        5.321928        
+INFO:root:3         1               2480            0.000403        0.100000        14.598053       
+INFO:root:final sum of probability: 24.703967
+INFO:root:
+
+########## words: ['boy', 'addition', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 34.328499
+INFO:root:
+
+########## words: ['lad', 'addition', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 32.183794
+INFO:root:
+
+########## words: ['boy', 'gain', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 35.098493
+INFO:root:
+
+########## words: ['lad', 'gain', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 32.953788
+INFO:root:
+
+########## words: ['boy', 'addition', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.194324
+INFO:root:
+
+########## words: ['lad', 'addition', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.049619
+INFO:root:
+
+########## words: ['boy', 'gain', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.964318
+INFO:root:
+
+########## words: ['lad', 'gain', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.819613
+INFO:root:
+
+########## words: ['boy', 'addition', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.657063
+INFO:root:
+
+########## words: ['lad', 'addition', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.512358
+INFO:root:
+
+########## words: ['boy', 'gain', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 32.427057
+INFO:root:
+
+########## words: ['lad', 'gain', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 30.282352
+INFO:root:
+
+########## words: ['boy', 'addition', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 37.733482
+INFO:root:
+
+########## words: ['lad', 'addition', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 35.588777
+INFO:root:
+
+########## words: ['boy', 'gain', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 38.503477
+INFO:root:
+
+########## words: ['lad', 'gain', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 36.358772
+INFO:root:
+
+########## words: ['boy', 'addition', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         3               95              0.031579        0.300000        6.721859        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 25.636401
+INFO:root:
+
+########## words: ['lad', 'addition', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         3               95              0.031579        0.300000        6.721859        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 23.491696
+INFO:root:
+
+########## words: ['boy', 'gain', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         4               162             0.024691        0.300000        7.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 25.991358
+INFO:root:
+
+########## words: ['lad', 'gain', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         4               162             0.024691        0.300000        7.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 23.846653
+INFO:root:
+
+########## words: ['boy', 'addition', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         9               95              0.094737        0.300000        5.136896        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 22.155700
+INFO:root:
+
+########## words: ['lad', 'addition', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         9               95              0.094737        0.300000        5.136896        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 20.010995
+INFO:root:
+
+########## words: ['boy', 'gain', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         15              162             0.092593        0.300000        5.169925        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 22.188728
+INFO:root:
+
+########## words: ['lad', 'gain', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         15              162             0.092593        0.300000        5.169925        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 20.044023
+INFO:root:
+
+########## words: ['boy', 'a', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               39426           0.000025        0.300000        17.003825       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 37.921987
+INFO:root:
+
+########## words: ['lad', 'a', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               39426           0.000025        0.300000        17.003825       
+INFO:root:3         1               2               0.500000        0.100000        4.321928        
+INFO:root:final sum of probability: 36.600059
+INFO:root:
+
+########## words: ['boy', 'the', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         7               146719          0.000048        0.300000        16.092307       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 37.010469
+INFO:root:
+
+########## words: ['lad', 'the', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         7               146719          0.000048        0.300000        16.092307       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 34.688541
+INFO:root:
+
+########## words: ['boy', 'a', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         11              39426           0.000279        0.300000        13.544394       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 33.683770
+INFO:root:
+
+########## words: ['lad', 'a', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         11              39426           0.000279        0.300000        13.544394       
+INFO:root:3         1               2               0.500000        0.100000        4.321928        
+INFO:root:final sum of probability: 32.361842
+INFO:root:
+
+########## words: ['boy', 'the', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         19              146719          0.000129        0.300000        14.651734       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 34.791111
+INFO:root:
+
+########## words: ['lad', 'the', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         19              146719          0.000129        0.300000        14.651734       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 32.469183
+INFO:root:
+
+########## words: ['boy', 'addition', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 34.328499
+INFO:root:
+
+########## words: ['lad', 'addition', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 32.183794
+INFO:root:
+
+########## words: ['boy', 'gain', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 35.098493
+INFO:root:
+
+########## words: ['lad', 'gain', 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 32.953788
+INFO:root:
+
+########## words: ['boy', 'addition', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.194324
+INFO:root:
+
+########## words: ['lad', 'addition', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.049619
+INFO:root:
+
+########## words: ['boy', 'gain', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.964318
+INFO:root:
+
+########## words: ['lad', 'gain', 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.819613
+INFO:root:
+
+########## words: ['boy', 'addition', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 31.657063
+INFO:root:
+
+########## words: ['lad', 'addition', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 29.512358
+INFO:root:
+
+########## words: ['boy', 'gain', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 32.427057
+INFO:root:
+
+########## words: ['lad', 'gain', 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 30.282352
+INFO:root:
+
+########## words: ['boy', 'addition', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 37.733482
+INFO:root:
+
+########## words: ['lad', 'addition', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               95              0.010526        0.300000        8.306821        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 35.588777
+INFO:root:
+
+########## words: ['boy', 'gain', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 38.503477
+INFO:root:
+
+########## words: ['lad', 'gain', 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               162             0.006173        0.300000        9.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 36.358772
+INFO:root:
+
+########## words: ['boy', 'addition', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         3               95              0.031579        0.300000        6.721859        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 25.636401
+INFO:root:
+
+########## words: ['lad', 'addition', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         3               95              0.031579        0.300000        6.721859        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 23.491696
+INFO:root:
+
+########## words: ['boy', 'gain', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         4               162             0.024691        0.300000        7.076816        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 25.991358
+INFO:root:
+
+########## words: ['lad', 'gain', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         4               162             0.024691        0.300000        7.076816        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 23.846653
+INFO:root:
+
+########## words: ['boy', 'addition', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         9               95              0.094737        0.300000        5.136896        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 22.155700
+INFO:root:
+
+########## words: ['lad', 'addition', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         9               95              0.094737        0.300000        5.136896        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 20.010995
+INFO:root:
+
+########## words: ['boy', 'gain', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         15              162             0.092593        0.300000        5.169925        
+INFO:root:3         1               482             0.002075        0.100000        12.234817       
+INFO:root:final sum of probability: 22.188728
+INFO:root:
+
+########## words: ['lad', 'gain', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         15              162             0.092593        0.300000        5.169925        
+INFO:root:3         1               109             0.009174        0.100000        10.090112       
+INFO:root:final sum of probability: 20.044023
+INFO:root:
+
+########## words: ['a', 'boy', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 34.696102
+INFO:root:
+
+########## words: ['the', 'boy', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               75              0.013333        0.100000        9.550747        
+INFO:root:final sum of probability: 35.498656
+INFO:root:
+
+########## words: ['a', 'lad', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               12              0.083333        0.100000        6.906891        
+INFO:root:final sum of probability: 30.699522
+INFO:root:
+
+########## words: ['the', 'lad', 'addition']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         102             2425357         0.000042        0.600000        15.274306       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 32.540824
+INFO:root:
+
+########## words: ['a', 'boy', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 33.917317
+INFO:root:
+
+########## words: ['the', 'boy', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         1               490             0.002041        0.300000        10.673604       
+INFO:root:3         1               75              0.013333        0.100000        9.550747        
+INFO:root:final sum of probability: 34.719870
+INFO:root:
+
+########## words: ['a', 'lad', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               12              0.083333        0.100000        6.906891        
+INFO:root:final sum of probability: 29.920736
+INFO:root:
+
+########## words: ['the', 'lad', 'gain']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         175             2425357         0.000072        0.600000        14.495520       
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 31.762038
+INFO:root:
+
+########## words: ['a', 'boy', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         5               490             0.010204        0.300000        8.351675        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 23.779593
+INFO:root:
+
+########## words: ['the', 'boy', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         5               490             0.010204        0.300000        8.351675        
+INFO:root:3         1               75              0.013333        0.100000        9.550747        
+INFO:root:final sum of probability: 24.582147
+INFO:root:
+
+########## words: ['a', 'lad', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         2               110             0.018182        0.300000        7.518325        
+INFO:root:3         1               12              0.083333        0.100000        6.906891        
+INFO:root:final sum of probability: 21.104941
+INFO:root:
+
+########## words: ['the', 'lad', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         2               110             0.018182        0.300000        7.518325        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 22.946243
+INFO:root:
+
+########## words: ['a', 'boy', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         5               490             0.010204        0.300000        8.351675        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 21.883854
+INFO:root:
+
+########## words: ['the', 'boy', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         5               490             0.010204        0.300000        8.351675        
+INFO:root:3         1               75              0.013333        0.100000        9.550747        
+INFO:root:final sum of probability: 22.686408
+INFO:root:
+
+########## words: ['a', 'lad', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               12              0.083333        0.100000        6.906891        
+INFO:root:final sum of probability: 20.209202
+INFO:root:
+
+########## words: ['the', 'lad', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1               110             0.009091        0.300000        8.518325        
+INFO:root:3         1               43              0.023256        0.100000        8.748193        
+INFO:root:final sum of probability: 22.050504
+INFO:root:
+
+########## words: [None, None, 'group']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         286             2425357         0.000118        0.600000        13.786860       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 67.709597
+INFO:root:
+
+########## words: [None, None, 'much']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         2511            2425357         0.001035        0.600000        10.652685       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 64.575422
+INFO:root:
+
+########## words: [None, None, 'many']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1822            2425357         0.000751        0.600000        11.115424       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 65.038161
+INFO:root:
+
+########## words: [None, None, 'quantity']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         27              2425357         0.000011        0.600000        17.191844       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 71.114581
+INFO:root:
+
+########## words: [None, 'much', 'persons']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         150             2425357         0.000062        0.600000        14.717913       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.422855
+INFO:root:
+
+########## words: [None, 'much', 'humanings']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'individuals']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         40              2425357         0.000016        0.600000        16.624803       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 57.329745
+INFO:root:
+
+########## words: [None, 'much', 'humans']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3               2425357         0.000001        0.600000        20.361769       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 61.066711
+INFO:root:
+
+########## words: [None, 'much', 'lucks']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'fortunes']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 58.259356
+INFO:root:
+
+########## words: [None, 'much', 'persons']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         150             2425357         0.000062        0.600000        14.717913       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.422855
+INFO:root:
+
+########## words: [None, 'much', 'human_beings']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'individuals']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         40              2425357         0.000016        0.600000        16.624803       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 57.329745
+INFO:root:
+
+########## words: [None, 'much', 'humans']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3               2425357         0.000001        0.600000        20.361769       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 61.066711
+INFO:root:
+
+########## words: [None, 'much', 'persons']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         150             2425357         0.000062        0.600000        14.717913       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.422855
+INFO:root:
+
+########## words: [None, 'much', 'human_beings']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'individuals']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         40              2425357         0.000016        0.600000        16.624803       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 57.329745
+INFO:root:
+
+########## words: [None, 'much', 'humans']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3               2425357         0.000001        0.600000        20.361769       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 61.066711
+INFO:root:
+
+########## words: [None, 'much', 'lucks']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'fortunes']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 58.259356
+INFO:root:
+
+########## words: [None, 'much', 'additions']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         9               2425357         0.000004        0.600000        18.776806       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 59.481748
+INFO:root:
+
+########## words: [None, 'much', 'gains']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         70              2425357         0.000029        0.600000        15.817448       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.522390
+INFO:root:
+
+########## words: [None, 'much', 'intensityies']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'indicator_(plural)s']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'lucks']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'fortunes']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 58.259356
+INFO:root:
+
+########## words: [None, 'much', 'persons']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         150             2425357         0.000062        0.600000        14.717913       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.422855
+INFO:root:
+
+########## words: [None, 'much', 'human_beings']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'individuals']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         40              2425357         0.000016        0.600000        16.624803       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 57.329745
+INFO:root:
+
+########## words: [None, 'much', 'humans']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3               2425357         0.000001        0.600000        20.361769       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 61.066711
+INFO:root:
+
+########## words: [None, 'much', 'lucks']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'fortunes']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 58.259356
+INFO:root:
+
+########## words: [None, 'much', 'additions']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         9               2425357         0.000004        0.600000        18.776806       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 59.481748
+INFO:root:
+
+########## words: [None, 'much', 'gains']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         70              2425357         0.000029        0.600000        15.817448       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.522390
+INFO:root:
+
+########## words: [None, 'much', 'intensityies']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'indicator_(plural)s']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'additions']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         9               2425357         0.000004        0.600000        18.776806       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 59.481748
+INFO:root:
+
+########## words: [None, 'much', 'gains']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         70              2425357         0.000029        0.600000        15.817448       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.522390
+INFO:root:
+
+########## words: [None, 'much', 'persons']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         150             2425357         0.000062        0.600000        14.717913       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 55.422855
+INFO:root:
+
+########## words: [None, 'much', 'human_beings']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'individuals']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         40              2425357         0.000016        0.600000        16.624803       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 57.329745
+INFO:root:
+
+########## words: [None, 'much', 'humans']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3               2425357         0.000001        0.600000        20.361769       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 61.066711
+INFO:root:
+
+########## words: [None, 'much', 'lucks']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'fortunes']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         21              2425357         0.000009        0.600000        17.554414       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 58.259356
+INFO:root:
+
+########## words: [None, 'much', 'additions']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         9               2425357         0.000004        0.600000        18.776806       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 59.481748
+INFO:root:
+
+########## words: [None, 'much', 'gains']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         70              2425357         0.000029        0.600000        15.817448       
+INFO:root:2         1               2431            0.000411        0.300000        12.984300       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 56.522390
+INFO:root:
+
+########## words: [None, 'much', 'intensityies']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'indicator_(plural)s']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'intensityies']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'indicator_(plural)s']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24253570        0.000000        0.600000        25.268659       
+INFO:root:2         1               24310           0.000041        0.300000        16.306228       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 69.295530
+INFO:root:
+
+########## words: [None, 'much', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         11              2431            0.004525        0.300000        9.524868        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 43.925236
+INFO:root:
+
+########## words: [None, 'much', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         77              2431            0.031674        0.300000        6.717513        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 39.222142
+INFO:root:
+
+########## words: ['this', 'fish', 'is']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         18161           2425357         0.007488        0.600000        7.798175        
+INFO:root:2         5               273             0.018315        0.300000        7.507795        
+INFO:root:3         1               4               0.250000        0.100000        5.321928        
+INFO:root:final sum of probability: 20.627898
+INFO:root:
+
+########## words: ['this', 'a', 'fish']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         334             2425357         0.000138        0.600000        13.563027       
+INFO:root:2         20              39426           0.000507        0.300000        12.681897       
+INFO:root:3         1               21              0.047619        0.100000        7.714246        
+INFO:root:final sum of probability: 33.959170
+INFO:root:
+
+########## words: ['this', 'the', 'fish']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         334             2425357         0.000138        0.600000        13.563027       
+INFO:root:2         79              146719          0.000538        0.300000        12.595881       
+INFO:root:3         1               99              0.010101        0.100000        9.951285        
+INFO:root:final sum of probability: 36.110193
+INFO:root:
+
+########## words: ['is', None, 'fat']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         220             2425357         0.000091        0.600000        14.165372       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               170440          0.000006        0.100000        20.700833       
+INFO:root:final sum of probability: 61.068299
+INFO:root:
+
+########## words: ['is', None, 'thick']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         166             2425357         0.000068        0.600000        14.571692       
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               170440          0.000006        0.100000        20.700833       
+INFO:root:final sum of probability: 61.474619
+INFO:root:
+
+########## words: ['is', None, 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               170440          0.000006        0.100000        20.700833       
+INFO:root:final sum of probability: 53.582653
+INFO:root:
+
+########## words: ['is', None, 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1               23159960        0.000000        0.300000        26.202095       
+INFO:root:3         1               170440          0.000006        0.100000        20.700833       
+INFO:root:final sum of probability: 51.686913
+INFO:root:
+
+########## words: [None, 'fat', 'but']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         14845           2425357         0.006121        0.600000        8.089042        
+INFO:root:2         1               204             0.004902        0.300000        9.409391        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 45.219075
+INFO:root:
+
+########## words: [None, 'fat', 'except']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         315             2425357         0.000130        0.600000        13.647523       
+INFO:root:2         1               204             0.004902        0.300000        9.409391        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 50.777557
+INFO:root:
+
+########## words: ['fat', 'but', 'that']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         31129           2425357         0.012835        0.600000        7.020760        
+INFO:root:2         292             14828           0.019692        0.300000        7.403177        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 17.745865
+INFO:root:
+
+########## words: ['but', 'that', 'fish']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         334             2425357         0.000138        0.600000        13.563027       
+INFO:root:2         3               30877           0.000097        0.300000        15.066248       
+INFO:root:3         1               291             0.003436        0.100000        11.506803       
+INFO:root:final sum of probability: 40.136078
+INFO:root:
+
+########## words: ['but', 'that', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         264             30877           0.008550        0.300000        8.606816        
+INFO:root:3         3               291             0.010309        0.100000        9.921841        
+INFO:root:final sum of probability: 25.208383
+INFO:root:
+
+########## words: ['but', 'that', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1943            30877           0.062927        0.300000        5.727140        
+INFO:root:3         16              291             0.054983        0.100000        7.506803        
+INFO:root:final sum of probability: 18.017930
+INFO:root:
+
+########## words: ['that', 'fish', 'is']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         18161           2425357         0.007488        0.600000        7.798175        
+INFO:root:2         5               273             0.018315        0.300000        7.507795        
+INFO:root:3         1               2               0.500000        0.100000        4.321928        
+INFO:root:final sum of probability: 19.627898
+INFO:root:
+
+########## words: ['fish', 'is', 'thin']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         85              2425357         0.000035        0.600000        15.537340       
+INFO:root:2         1               18006           0.000056        0.300000        15.873156       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 37.054352
+INFO:root:
+
+########## words: ['fish', 'is', 'slim']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         12              2425357         0.000005        0.600000        18.361769       
+INFO:root:2         1               18006           0.000056        0.300000        15.873156       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 39.878781
+INFO:root:
+
+########## words: ['fish', 'is', 'narrow']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         76              2425357         0.000031        0.600000        15.698804       
+INFO:root:2         2               18006           0.000111        0.300000        14.873156       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 36.215816
+INFO:root:
+
+########## words: ['fish', 'is', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39430           2425357         0.016257        0.600000        6.679725        
+INFO:root:2         1228            18006           0.068199        0.300000        5.611061        
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 17.934642
+INFO:root:
+
+########## words: ['fish', 'is', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146724          2425357         0.060496        0.600000        4.783986        
+INFO:root:2         1448            18006           0.080418        0.300000        5.373310        
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 15.801152
