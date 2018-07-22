@@ -1,4 +1,4 @@
-from nltk.corpus import wordnet, gutenberg, brown, conll2000
+from nltk.corpus import wordnet, gutenberg, brown, conll2000, nps_chat
 import re
 import time
 import pickle
@@ -30,12 +30,16 @@ class SystemTools:
 
     def __init__(self):
         self.realise = Realiser(host='nlg.kutlak.info')
-        self.ngram = n_gram(3, .06, logging=True)
+        self.ngram = n_gram(3, .06, logging=False)
         self.ngram.manual_interpolation([.6, .3, .1])
         self.ngram.load_n_gram()
         # self.ngram.read_corpus(gutenberg)
         # self.ngram.read_corpus(brown)
         # self.ngram.read_corpus(conll2000)
+        # nps_text = [x[0] for x in nps_chat.tagged_posts()]
+
+        # self.ngram.read_corpus(nps_text, treat_as_list=True)
+
 
     def get_symbols(self):
         return list(pickle.load(open('pickles/syms-2.p', 'rb')))
@@ -275,13 +279,17 @@ class SystemTools:
 
         return combinations
 
-    def get_most_likely_n_gram(self, n_gram_list):
+    def get_most_likely_n_gram(self, n_gram_list, first=False):
         probabilities = [None] * len(n_gram_list)
         for i, gram in enumerate(n_gram_list):
-            probabilities[i] = (self.ngram.get_n_gram_probability(gram[0]), gram[0], gram[1])
+            if first:
+                probabilities[i] = (self.ngram.get_first_gram_probability(gram[0]), gram[0], gram[1])
+            else:
+                probabilities[i] = (self.ngram.get_n_gram_probability(gram[0]), gram[0], gram[1])
             probabilities = [x for x in probabilities if (type(x) is not None)]
         probabilities = sorted(probabilities, key=lambda x: x[0], reverse=True)
         return probabilities[-1]
+
 
     def get_most_likely_sentence(self, list_of_lists):
         return_list = [None] * (len(list_of_lists))

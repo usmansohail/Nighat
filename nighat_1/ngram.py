@@ -2,7 +2,7 @@ import cmath
 import re
 import nltk
 from nltk.util import ngrams
-from nltk.corpus import gutenberg, brown, conll2000, webtext
+from nltk.corpus import gutenberg, brown, conll2000, webtext, nps_chat
 import cmath
 import pickle
 import string
@@ -52,10 +52,14 @@ class n_gram:
         return [str(re.sub(self.regex, '', x)).lower() for x in words
                 if str(re.sub(self.regex, '', x)).lower() is not '']
 
-    def read_corpus(self, corpus):
+    def read_corpus(self, corpus, treat_as_list=False):
         self.logg('Reading corpus')
-        self.corpus = corpus.sents()
-        self.num_words += len(corpus.words())
+        if treat_as_list:
+            self.corpus = corpus
+            self.num_words += len(corpus)
+        else:
+            self.corpus = corpus.sents()
+            self.num_words += len(corpus.words())
         for sentence in self.corpus:
             temp_list = self.clean_sentence(sentence)
 
@@ -116,6 +120,7 @@ class n_gram:
 
 
     def get_gram_counts(self, words):
+        words = [str(w).lower() for w in words]
         self.logg(("\n\n########## words: %s", words))
         n_gram_counts = {}
         for i in range(1, self.n + 1):
@@ -141,6 +146,56 @@ class n_gram:
                         n_gram_counts[i] = (1, current_dictionary[self.total_string] * self.word_status(word))
                 w += 1
         return n_gram_counts
+
+    def get_first_n_gram_counts(self, words):
+        words = [str(w).lower() for w in words]
+        n_gram_counts = {}
+        index = 0
+        for i in range(1, self.n + 1):
+            n_gram_counts[i] = []
+            for gram in ngrams(words, i):
+                w = 0
+                finish_words = True
+                current_dictionary = self.n_grams[i]
+
+                while w < i and finish_words:
+                    word = gram[w]
+                    if w < i - 1:
+                        try:
+                            current_dictionary = current_dictionary[word]
+                        except KeyError:
+                            n_gram_counts[i].append((1, current_dictionary[self.total_string] * self.word_status(word)))
+                            finish_words = False
+                            index += 1
+                    else:
+                        try:
+                            n_gram_counts[i].append((current_dictionary[word], current_dictionary[self.total_string]))
+                            index += 1
+                        except KeyError:
+                            n_gram_counts[i].append((1, current_dictionary[self.total_string] * self.word_status(word)))
+                            index += 1
+                    w += 1
+        return n_gram_counts
+
+    def get_first_gram_probability(self, words):
+        counts = self.get_first_n_gram_counts(words)
+        probability = 0
+        self.logg(("%-10s%-16s%-16s%-16s%-16s%-16s", "n: ", "numerator:", "denominator:", "fraction:",
+                     "lambda:", "final result:"))
+        for i in range(1, self.n + 1):
+            for c in counts[i]:
+                try:
+                    if not (c[1] == 0):
+                        fraction = float(c[0] / c[1])
+                        final = self.interpolation_lamdas[i] * fraction
+                        final = -cmath.log(final, 2).real
+                        probability += final
+                        self.logg(("%-10d%-16d%-16d%-16f%-16f%-16f", i, c[0], c[1], fraction,
+                                     self.interpolation_lamdas[i], final))
+                except KeyError:
+                    pass
+        self.logg(("final sum of probability: %f", probability))
+        return float(probability)
 
     def get_n_gram_probability(self, words):
         counts = self.get_gram_counts(words)
