@@ -1,4 +1,13 @@
+# [['for', 'inorderto'], ['boy', 'lad'], ['and', 'also', 'plus', 'too'], ['his', 'their', 'its'], ['family', 'couple']]
 14382 12888,8560 12374 16161,8499,24676 15416,16420,18269
+# [['I', 'me', 'myself'], ['have', 'have'], ['two', '2'], ['fatness', 'thickness'], [ ['fish']]
 16161,8497 24912,8993 8498 25561 14188
+# [['boy', 'lad'], ['addition', 'gain'], ['group', 'much', 'many', 'quantity'], ['persons', 'humanings', 'individuals', 'humans']
 12888,8560 12339,13901,8993 14647,8998 16161,14164,12339,14947,9011
+# [['this'], ['fish'], ['is'], ['fat', 'thick'], ['but', 'except'], ['that'], ['fish'], ['is'], ['thin', 'slim', 'narrow']]
 17720 14188 15206,8993,8993 25560,8998 13094 17697 14188 15206,8993,8993 25622,8998
+# but, boy,  is,  lucky{NC}, because{NC},  he, to_have,    a,   good{NE},  mind, and his , 
+13094 12888,8560 15206,8993,8993 15403 12647 15414,8499 24912,8993 12321 14456,8998 15471 12374 16161,8499,24676 15471,13869,9011
+# the, other, fat, fish, is, called, bottom{replaced}
+17700 16161,8498 25560,8998 14188 15206,8993,8993 15691,8993 23619,17717
+

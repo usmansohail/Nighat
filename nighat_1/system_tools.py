@@ -30,7 +30,7 @@ class SystemTools:
 
     def __init__(self):
         self.realise = Realiser(host='nlg.kutlak.info')
-        self.ngram = n_gram(3, .06, logging=False)
+        self.ngram = n_gram(3, .06, logging=True)
         self.ngram.manual_interpolation([.6, .3, .1])
         self.ngram.load_n_gram()
         # self.ngram.read_corpus(gutenberg)
@@ -306,7 +306,7 @@ class SystemTools:
 
         first_n_words = list_of_lists[:i]
         combos = self.get_combos(first_n_words, self.ngram.n)
-        first_n_words = self.get_most_likely_n_gram(combos)
+        first_n_words = self.get_most_likely_n_gram(combos, first=True)
         offset = first_n_words[2]
         return_list[:slice_end] = first_n_words[1]
         print("first N words: ", first_n_words)

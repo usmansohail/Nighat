@@ -34,6 +34,7 @@ class n_gram:
         self.total_string = "total###"
         self.words = {}
         self.error_not_word = not_word
+        self.first_words = {}
 
         # create dictionary for all n-grams [1 - n)
         for i in range(1, self.n + 1):
@@ -43,6 +44,7 @@ class n_gram:
         self.n_grams = pickle.load(open('pickles/n_grams.p', 'rb'))
         self.num_words = pickle.load(open('pickles/num_words.p', 'rb'))
         self.words = pickle.load(open('pickles/words.p', 'rb'))
+        self.first_words = pickle.load(open('pickles/first_words.p', 'rb'))
 
     def logg(self, string):
         if self.logging:
@@ -62,6 +64,12 @@ class n_gram:
             self.num_words += len(corpus.words())
         for sentence in self.corpus:
             temp_list = self.clean_sentence(sentence)
+            if len(temp_list) > 0:
+                try:
+                    self.first_words[temp_list[0]] += 1
+                except KeyError:
+                    self.first_words[temp_list[0]] = 1
+
 
             for n in range(1, self.n + 1):
                 sent_ngrams = ngrams(temp_list, n)
@@ -94,6 +102,7 @@ class n_gram:
         pickle.dump(self.n_grams, open('pickles/n_grams.p', 'wb'))
         pickle.dump(self.num_words, open('pickles/num_words.p', 'wb'))
         pickle.dump(self.words, open('pickles/words.p', 'wb'))
+        pickle.dump(self.first_words, open('pickles/first_words.p', 'wb'))
 
         self.logg('Done reading corpus')
         print("done reading corpus")
@@ -149,6 +158,7 @@ class n_gram:
 
     def get_first_n_gram_counts(self, words):
         words = [str(w).lower() for w in words]
+        self.logg(("\n\n########## words: %s", words))
         n_gram_counts = {}
         index = 0
         for i in range(1, self.n + 1):
@@ -180,6 +190,13 @@ class n_gram:
     def get_first_gram_probability(self, words):
         counts = self.get_first_n_gram_counts(words)
         probability = 0
+        first_word = 1
+        try:
+            first_word *= (self.first_words[words[0]] / self.num_words)
+        except KeyError:
+            first_word *= (1 / self.num_words)
+        probability += first_word
+        self.logg(("First word probability: %f", probability))
         self.logg(("%-10s%-16s%-16s%-16s%-16s%-16s", "n: ", "numerator:", "denominator:", "fraction:",
                      "lambda:", "final result:"))
         for i in range(1, self.n + 1):
