@@ -495,20 +495,20 @@ INFO:root:3         1               6               0.166667        0.100000    
 INFO:root:final sum of probability: 60.904219
 INFO:root:
 
-########## words: ['have', 'two', 'fatness']
+########## words: ['have', 'two', 'fat']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         18              2445597         0.000007        0.600000        17.788796       
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
 INFO:root:2         1               2630            0.000380        0.300000        13.097813       
 INFO:root:3         1               22              0.045455        0.100000        7.781360        
-INFO:root:final sum of probability: 38.667968
+INFO:root:final sum of probability: 35.056534
 INFO:root:
 
-########## words: ['have', 'two', 'thickness']
+########## words: ['have', 'two', 'thick']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13              2445597         0.000005        0.600000        18.258281       
-INFO:root:2         1               2630            0.000380        0.300000        13.097813       
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:2         3               2630            0.001141        0.300000        11.512850       
 INFO:root:3         1               22              0.045455        0.100000        7.781360        
-INFO:root:final sum of probability: 39.137454
+INFO:root:final sum of probability: 33.877891
 INFO:root:
 
 ########## words: ['have', 'two', 'a']
@@ -527,28 +527,28 @@ INFO:root:3         1               22              0.045455        0.100000    
 INFO:root:final sum of probability: 22.504839
 INFO:root:
 
-########## words: ['two', 'fatness', 'fish']
+########## words: ['two', 'thick', 'fish']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
 INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
-INFO:root:2         1               12              0.083333        0.300000        5.321928        
-INFO:root:3         1               2480            0.000403        0.100000        14.598053       
-INFO:root:final sum of probability: 33.494997
+INFO:root:2         1               163             0.006135        0.300000        9.085694        
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 27.567601
 INFO:root:
 
-########## words: ['two', 'fatness', 'a']
+########## words: ['two', 'thick', 'a']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
 INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         1               12              0.083333        0.300000        5.321928        
-INFO:root:3         1               2480            0.000403        0.100000        14.598053       
-INFO:root:final sum of probability: 26.610854
+INFO:root:2         2               163             0.012270        0.300000        8.085694        
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 19.683458
 INFO:root:
 
-########## words: ['two', 'fatness', 'the']
+########## words: ['two', 'thick', 'the']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
 INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         1               12              0.083333        0.300000        5.321928        
-INFO:root:3         1               2480            0.000403        0.100000        14.598053       
-INFO:root:final sum of probability: 24.715573
+INFO:root:2         3               163             0.018405        0.300000        7.500731        
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 17.203214
 INFO:root:
 
 ########## words: ['boy', 'addition', 'group']
@@ -2715,553 +2715,1225 @@ INFO:root:3         15              86              0.174419        0.100000    
 INFO:root:final sum of probability: 15.253178
 INFO:root:
 
-########## words: ['he', 'like', 'be']
-INFO:root:First word probability: 0.001083
+########## words: ['they', 'live', 'in']
+INFO:root:First word probability: 0.000400
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
+INFO:root:3         6               16              0.375000        0.100000        4.736966        
+INFO:root:final sum of probability: 48.636316
+INFO:root:
+
+########## words: ['them', 'live', 'in']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
 INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 58.164143
+INFO:root:final sum of probability: 51.020057
 INFO:root:
 
-########## words: ['him', 'like', 'be']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 58.366059
-INFO:root:
-
-########## words: ['himself', 'like', 'be']
+########## words: ['themselves', 'live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 58.407561
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 60.544969
 INFO:root:
 
-########## words: ['he', 'like', 'be']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 58.164143
-INFO:root:
-
-########## words: ['him', 'like', 'be']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 58.366059
-INFO:root:
-
-########## words: ['himself', 'like', 'be']
+########## words: ['persons they', 'live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 58.407561
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 103.418374
 INFO:root:
 
-########## words: ['he', 'like', 'am']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 60.664205
-INFO:root:
-
-########## words: ['him', 'like', 'am']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 60.866120
-INFO:root:
-
-########## words: ['himself', 'like', 'am']
+########## words: ['persons them', 'live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 60.907622
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 103.418374
 INFO:root:
 
-########## words: ['he', 'like', 'am']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 60.664205
-INFO:root:
-
-########## words: ['him', 'like', 'am']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 60.866120
-INFO:root:
-
-########## words: ['himself', 'like', 'am']
+########## words: ['persons themselves', 'live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 60.907622
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         66              498             0.132530        0.300000        4.652573        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 103.418374
 INFO:root:
 
-########## words: ['he', 'like', 'are']
-INFO:root:First word probability: 0.001083
+########## words: ['they', 'lifeto live', 'in']
+INFO:root:First word probability: 0.000400
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 59.290279
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 105.593690
 INFO:root:
 
-########## words: ['him', 'like', 'are']
-INFO:root:First word probability: 0.000007
+########## words: ['them', 'lifeto live', 'in']
+INFO:root:First word probability: 0.000001
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 59.492194
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 104.767133
 INFO:root:
 
-########## words: ['himself', 'like', 'are']
+########## words: ['themselves', 'lifeto live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 59.533696
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 101.200776
 INFO:root:
 
-########## words: ['he', 'like', 'are']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 59.290279
-INFO:root:
-
-########## words: ['him', 'like', 'are']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 59.492194
-INFO:root:
-
-########## words: ['himself', 'like', 'are']
+########## words: ['persons they', 'lifeto live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 59.533696
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.430325
 INFO:root:
 
-########## words: ['he', 'like', 'is']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 56.493090
-INFO:root:
-
-########## words: ['him', 'like', 'is']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 56.695005
-INFO:root:
-
-########## words: ['himself', 'like', 'is']
+########## words: ['persons them', 'lifeto live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 56.736508
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.430325
 INFO:root:
 
-########## words: ['he', 'like', 'is']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 56.493090
-INFO:root:
-
-########## words: ['him', 'like', 'is']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 56.695005
-INFO:root:
-
-########## words: ['himself', 'like', 'is']
+########## words: ['persons themselves', 'lifeto live', 'in']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         3               3583            0.000837        0.300000        11.958955       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 56.736508
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         38343           2445597         0.015678        0.600000        6.732045        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.430325
 INFO:root:
 
-########## words: ['he', 'like', 'exist']
-INFO:root:First word probability: 0.001083
+########## words: ['they', 'live', 'inside']
+INFO:root:First word probability: 0.000400
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               16              0.062500        0.100000        7.321928        
+INFO:root:final sum of probability: 65.877638
+INFO:root:
+
+########## words: ['them', 'live', 'inside']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
 INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 66.943905
+INFO:root:final sum of probability: 65.676416
 INFO:root:
 
-########## words: ['him', 'like', 'exist']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 67.145820
-INFO:root:
-
-########## words: ['himself', 'like', 'exist']
+########## words: ['themselves', 'live', 'inside']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 67.187322
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 75.201329
 INFO:root:
 
-########## words: ['he', 'like', 'exist']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 66.943905
-INFO:root:
-
-########## words: ['him', 'like', 'exist']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               39              0.025641        0.100000        8.607330        
-INFO:root:final sum of probability: 67.145820
-INFO:root:
-
-########## words: ['himself', 'like', 'exist']
+########## words: ['persons they', 'live', 'inside']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         1               3583            0.000279        0.300000        13.543918       
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 67.187322
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 118.074734
 INFO:root:
 
-########## words: ['he', 'like', 'a']
-INFO:root:First word probability: 0.001083
+########## words: ['persons them', 'live', 'inside']
+INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 118.074734
+INFO:root:
+
+########## words: ['persons themselves', 'live', 'inside']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 118.074734
+INFO:root:
+
+########## words: ['they', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 114.205656
+INFO:root:
+
+########## words: ['them', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 113.379099
+INFO:root:
+
+########## words: ['themselves', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 109.812742
+INFO:root:
+
+########## words: ['persons they', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 146.042291
+INFO:root:
+
+########## words: ['persons them', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 146.042291
+INFO:root:
+
+########## words: ['persons themselves', 'lifeto live', 'inside']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         98              2445597         0.000040        0.600000        15.344011       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 146.042291
+INFO:root:
+
+########## words: ['they', 'live', 'interior']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               16              0.062500        0.100000        7.321928        
+INFO:root:final sum of probability: 67.634367
+INFO:root:
+
+########## words: ['them', 'live', 'interior']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 67.433145
+INFO:root:
+
+########## words: ['themselves', 'live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 76.958058
+INFO:root:
+
+########## words: ['persons they', 'live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['persons them', 'live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['persons themselves', 'live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['they', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 115.962385
+INFO:root:
+
+########## words: ['them', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 115.135828
+INFO:root:
+
+########## words: ['themselves', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 111.569471
+INFO:root:
+
+########## words: ['persons they', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['persons them', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['persons themselves', 'lifeto live', 'interior']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['they', 'live', 'internal']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               16              0.062500        0.100000        7.321928        
+INFO:root:final sum of probability: 67.634367
+INFO:root:
+
+########## words: ['them', 'live', 'internal']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 67.433145
+INFO:root:
+
+########## words: ['themselves', 'live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 76.958058
+INFO:root:
+
+########## words: ['persons they', 'live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['persons them', 'live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['persons themselves', 'live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               498             0.002008        0.300000        10.696968       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 119.831463
+INFO:root:
+
+########## words: ['they', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 115.962385
+INFO:root:
+
+########## words: ['them', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 115.135828
+INFO:root:
+
+########## words: ['themselves', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 111.569471
+INFO:root:
+
+########## words: ['persons they', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['persons them', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['persons themselves', 'lifeto live', 'internal']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         29              2445597         0.000012        0.600000        17.100740       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 147.799019
+INFO:root:
+
+########## words: ['they', 'live', 'a']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
 INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 47.133323
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               16              0.062500        0.100000        7.321928        
+INFO:root:final sum of probability: 54.639538
 INFO:root:
 
-########## words: ['him', 'like', 'a']
-INFO:root:First word probability: 0.000007
+########## words: ['them', 'live', 'a']
+INFO:root:First word probability: 0.000001
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
 INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         19              39              0.487179        0.100000        4.359403        
-INFO:root:final sum of probability: 43.087311
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 54.438316
 INFO:root:
 
-########## words: ['himself', 'like', 'a']
+########## words: ['themselves', 'live', 'a']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
 INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         3               4               0.750000        0.100000        3.736966        
-INFO:root:final sum of probability: 45.791778
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 63.963229
 INFO:root:
 
-########## words: ['he', 'like', 'a']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 47.133323
-INFO:root:
-
-########## words: ['him', 'like', 'a']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         19              39              0.487179        0.100000        4.359403        
-INFO:root:final sum of probability: 43.087311
-INFO:root:
-
-########## words: ['himself', 'like', 'a']
+########## words: ['persons they', 'live', 'a']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
 INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         909             3583            0.253698        0.300000        3.715781        
-INFO:root:3         3               4               0.750000        0.100000        3.736966        
-INFO:root:final sum of probability: 45.791778
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 106.836634
 INFO:root:
 
-########## words: ['he', 'like', 'the']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 46.331468
-INFO:root:
-
-########## words: ['him', 'like', 'the']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         7               39              0.179487        0.100000        5.799975        
-INFO:root:final sum of probability: 43.726029
-INFO:root:
-
-########## words: ['himself', 'like', 'the']
+########## words: ['persons them', 'live', 'a']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 46.574886
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 106.836634
 INFO:root:
 
-########## words: ['he', 'like', 'the']
-INFO:root:First word probability: 0.001083
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         26795           2445597         0.010956        0.600000        7.249045        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         4               26640           0.000150        0.300000        14.438272       
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         1               3               0.333333        0.100000        4.906891        
-INFO:root:final sum of probability: 46.331468
-INFO:root:
-
-########## words: ['him', 'like', 'the']
-INFO:root:First word probability: 0.000007
-INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         13128           2445597         0.005368        0.600000        8.278361        
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
-INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         39              11268           0.003461        0.300000        9.911507        
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         7               39              0.179487        0.100000        5.799975        
-INFO:root:final sum of probability: 43.726029
-INFO:root:
-
-########## words: ['himself', 'like', 'the']
+########## words: ['persons themselves', 'live', 'a']
 INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         1732            2445597         0.000708        0.600000        11.200498       
-INFO:root:1         3634            2445597         0.001486        0.600000        10.131378       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 106.836634
+INFO:root:
+
+########## words: ['they', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 105.552518
+INFO:root:
+
+########## words: ['them', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 104.725962
+INFO:root:
+
+########## words: ['themselves', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 101.159604
+INFO:root:
+
+########## words: ['persons they', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.389153
+INFO:root:
+
+########## words: ['persons them', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.389153
+INFO:root:
+
+########## words: ['persons themselves', 'lifeto live', 'a']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 137.389153
+INFO:root:
+
+########## words: ['they', 'live', 'the']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
 INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
-INFO:root:2         4               1530            0.002614        0.300000        10.316282       
-INFO:root:2         426             3583            0.118895        0.300000        4.809208        
-INFO:root:3         1               4               0.250000        0.100000        5.321928        
-INFO:root:final sum of probability: 46.574886
+INFO:root:2         16              13763           0.001163        0.300000        11.485473       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               16              0.062500        0.100000        7.321928        
+INFO:root:final sum of probability: 52.744257
 INFO:root:
 
-########## words: ['like', 'a', 'be']
+########## words: ['them', 'live', 'the']
+INFO:root:First word probability: 0.000001
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         17141           2445597         0.007009        0.600000        7.893557        
-INFO:root:2         1               39449           0.000025        0.300000        17.004667       
-INFO:root:3         1               909             0.001100        0.100000        13.150065       
-INFO:root:final sum of probability: 38.048288
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         3               9034            0.000332        0.300000        13.293152       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               3               0.333333        0.100000        4.906891        
+INFO:root:final sum of probability: 52.543035
 INFO:root:
 
-########## words: ['like', 'a', 'am']
+########## words: ['themselves', 'live', 'the']
+INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         3030            2445597         0.001239        0.600000        10.393619       
-INFO:root:2         1               39449           0.000025        0.300000        17.004667       
-INFO:root:3         1               909             0.001100        0.100000        13.150065       
-INFO:root:final sum of probability: 40.548350
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               728             0.001374        0.300000        11.244760       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               713             0.001403        0.100000        12.799686       
+INFO:root:final sum of probability: 62.067948
 INFO:root:
 
-########## words: ['like', 'a', 'are']
+########## words: ['persons they', 'live', 'the']
+INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         7853            2445597         0.003211        0.600000        9.019693        
-INFO:root:2         1               39449           0.000025        0.300000        17.004667       
-INFO:root:3         1               909             0.001100        0.100000        13.150065       
-INFO:root:final sum of probability: 39.174424
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 104.941353
 INFO:root:
 
-########## words: ['like', 'a', 'is']
+########## words: ['persons them', 'live', 'the']
+INFO:root:First word probability: 0.000000
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
-INFO:root:2         3               39449           0.000076        0.300000        15.419704       
-INFO:root:3         1               909             0.001100        0.100000        13.150065       
-INFO:root:final sum of probability: 36.377235
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 104.941353
 INFO:root:
 
-########## words: ['like', 'a', 'exist']
+########## words: ['persons themselves', 'live', 'the']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         562             2445597         0.000230        0.600000        12.824295       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         6               498             0.012048        0.300000        8.112005        
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 104.941353
+INFO:root:
+
+########## words: ['they', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000400
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         13817           2445597         0.005650        0.600000        8.204564        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               137630          0.000007        0.300000        18.807401       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               134620          0.000007        0.100000        20.360461       
+INFO:root:final sum of probability: 103.657237
+INFO:root:
+
+########## words: ['them', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000001
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10424           2445597         0.004262        0.600000        8.611099        
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               90340           0.000011        0.300000        18.200043       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               87270           0.000011        0.100000        19.735126       
+INFO:root:final sum of probability: 102.830680
+INFO:root:
+
+########## words: ['themselves', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         813             2445597         0.000332        0.600000        12.291609       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               7280            0.000137        0.300000        14.566688       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               7130            0.000140        0.100000        16.121614       
+INFO:root:final sum of probability: 99.264323
+INFO:root:
+
+########## words: ['persons they', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 135.493872
+INFO:root:
+
+########## words: ['persons them', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 135.493872
+INFO:root:
+
+########## words: ['persons themselves', 'lifeto live', 'the']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:2         1               23257680        0.000000        0.300000        26.208169       
+INFO:root:3         1               22117950        0.000000        0.100000        27.720642       
+INFO:root:final sum of probability: 135.493872
+INFO:root:
+
+########## words: ['in', 'none', 'water']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         848             2445597         0.000347        0.600000        12.230800       
+INFO:root:2         1               664             0.001506        0.300000        11.112005       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 26.664734
+INFO:root:
+
+########## words: ['in', 'none', 'fluid']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         26              2445597         0.000011        0.600000        17.258281       
+INFO:root:2         1               664             0.001506        0.300000        11.112005       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 31.692214
+INFO:root:
+
+########## words: ['in', 'none', 'liquid']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
 INFO:root:1         39              2445597         0.000016        0.600000        16.673319       
-INFO:root:2         1               39449           0.000025        0.300000        17.004667       
-INFO:root:3         1               909             0.001100        0.100000        13.150065       
-INFO:root:final sum of probability: 46.828050
+INFO:root:2         1               664             0.001506        0.300000        11.112005       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 31.107252
 INFO:root:
 
-########## words: ['a', 'is', 'at']
+########## words: ['in', 'none', 'a']
 INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
-INFO:root:1         10484           2445597         0.004287        0.600000        8.602819        
-INFO:root:2         90              18040           0.004989        0.300000        9.384024        
-INFO:root:3         1               2               0.500000        0.100000        4.321928        
-INFO:root:final sum of probability: 22.308772
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               664             0.001506        0.300000        11.112005       
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 21.124807
+INFO:root:
+
+########## words: ['in', 'none', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         4               664             0.006024        0.300000        9.112005        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 17.229525
+INFO:root:
+
+########## words: ['one', 'fat', 'fish']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         2               204             0.009804        0.300000        8.409391        
+INFO:root:3         1               6231            0.000160        0.100000        15.927176       
+INFO:root:final sum of probability: 75.741666
+INFO:root:
+
+########## words: ['1', 'fat', 'fish']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         2               204             0.009804        0.300000        8.409391        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 74.695751
+INFO:root:
+
+########## words: ['one', 'thick', 'fish']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         1               163             0.006135        0.300000        9.085694        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 64.219041
+INFO:root:
+
+########## words: ['1', 'thick', 'fish']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         1               163             0.006135        0.300000        9.085694        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 75.778374
+INFO:root:
+
+########## words: ['one', 'fat', 'a']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         1               204             0.004902        0.300000        9.409391        
+INFO:root:3         1               6231            0.000160        0.100000        15.927176       
+INFO:root:final sum of probability: 69.857522
+INFO:root:
+
+########## words: ['1', 'fat', 'a']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         1               204             0.004902        0.300000        9.409391        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 68.811608
+INFO:root:
+
+########## words: ['one', 'thick', 'a']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         2               163             0.012270        0.300000        8.085694        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 56.334898
+INFO:root:
+
+########## words: ['1', 'thick', 'a']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         2               163             0.012270        0.300000        8.085694        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 67.894231
+INFO:root:
+
+########## words: ['one', 'fat', 'the']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         2               204             0.009804        0.300000        8.409391        
+INFO:root:3         1               6231            0.000160        0.100000        15.927176       
+INFO:root:final sum of probability: 66.962241
+INFO:root:
+
+########## words: ['1', 'fat', 'the']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         2               204             0.009804        0.300000        8.409391        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 65.916327
+INFO:root:
+
+########## words: ['one', 'thick', 'the']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               6467            0.000155        0.300000        14.395846       
+INFO:root:2         3               163             0.018405        0.300000        7.500731        
+INFO:root:3         1               1               1.000000        0.100000        3.321928        
+INFO:root:final sum of probability: 53.854654
+INFO:root:
+
+########## words: ['1', 'thick', 'the']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         1               3008            0.000332        0.300000        13.291554       
+INFO:root:2         3               163             0.018405        0.300000        7.500731        
+INFO:root:3         1               2982            0.000335        0.100000        14.863993       
+INFO:root:final sum of probability: 65.413987
+INFO:root:
+
+########## words: ['one', 'a', 'fat']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:2         20              6467            0.003093        0.300000        10.073918       
+INFO:root:2         9               39449           0.000228        0.300000        13.834742       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 61.677625
+INFO:root:
+
+########## words: ['1', 'a', 'fat']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:2         11              3008            0.003657        0.300000        9.832123        
+INFO:root:2         9               39449           0.000228        0.300000        13.834742       
+INFO:root:3         1               11              0.090909        0.100000        6.781360        
+INFO:root:final sum of probability: 61.694894
+INFO:root:
+
+########## words: ['one', 'the', 'fat']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:2         51              6467            0.007886        0.300000        8.723421        
+INFO:root:2         92              146758          0.000627        0.300000        12.376483       
+INFO:root:3         1               51              0.019608        0.100000        8.994353        
+INFO:root:final sum of probability: 58.324085
+INFO:root:
+
+########## words: ['1', 'the', 'fat']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:1         220             2445597         0.000090        0.600000        14.177361       
+INFO:root:2         89              3008            0.029588        0.300000        6.815821        
+INFO:root:2         92              146758          0.000627        0.300000        12.376483       
+INFO:root:3         1               89              0.011236        0.100000        9.797662        
+INFO:root:final sum of probability: 58.341355
+INFO:root:
+
+########## words: ['one', 'a', 'thick']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:2         20              6467            0.003093        0.300000        10.073918       
+INFO:root:2         20              39449           0.000507        0.300000        12.682739       
+INFO:root:3         1               20              0.050000        0.100000        7.643856        
+INFO:root:final sum of probability: 60.931942
+INFO:root:
+
+########## words: ['1', 'a', 'thick']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:2         11              3008            0.003657        0.300000        9.832123        
+INFO:root:2         20              39449           0.000507        0.300000        12.682739       
+INFO:root:3         1               11              0.090909        0.100000        6.781360        
+INFO:root:final sum of probability: 60.949212
+INFO:root:
+
+########## words: ['one', 'the', 'thick']
+INFO:root:First word probability: 0.000110
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         6663            2445597         0.002724        0.600000        9.256765        
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:2         51              6467            0.007886        0.300000        8.723421        
+INFO:root:2         31              146758          0.000211        0.300000        13.945849       
+INFO:root:3         1               51              0.019608        0.100000        8.994353        
+INFO:root:final sum of probability: 60.299771
+INFO:root:
+
+########## words: ['1', 'the', 'thick']
+INFO:root:First word probability: 0.000444
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         3063            2445597         0.001252        0.600000        10.377991       
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:1         166             2445597         0.000068        0.600000        14.583681       
+INFO:root:2         89              3008            0.029588        0.300000        6.815821        
+INFO:root:2         31              146758          0.000211        0.300000        13.945849       
+INFO:root:3         1               89              0.011236        0.100000        9.797662        
+INFO:root:final sum of probability: 60.317041
+INFO:root:
+
+########## words: ['the', 'none', 'fish']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         334             2445597         0.000137        0.600000        13.575017       
+INFO:root:2         1               664             0.001506        0.300000        11.112005       
+INFO:root:3         1               136890          0.000007        0.100000        20.384586       
+INFO:root:final sum of probability: 45.071607
+INFO:root:
+
+########## words: ['none', 'fish', 'is']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         18195           2445597         0.007440        0.600000        7.807466        
+INFO:root:2         5               273             0.018315        0.300000        7.507795        
+INFO:root:3         1               638             0.001567        0.100000        12.639341       
+INFO:root:final sum of probability: 27.954602
+INFO:root:
+
+########## words: ['fish', 'is', 'named']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         169             2445597         0.000069        0.600000        14.557841       
+INFO:root:2         7               18040           0.000388        0.300000        13.068522       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 33.270220
+INFO:root:
+
+########## words: ['fish', 'is', 'called']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1212            2445597         0.000496        0.600000        11.715547       
+INFO:root:2         86              18040           0.004767        0.300000        9.449613        
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 26.809016
+INFO:root:
+
+########## words: ['fish', 'is', 'named']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         169             2445597         0.000069        0.600000        14.557841       
+INFO:root:2         7               18040           0.000388        0.300000        13.068522       
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 33.270220
+INFO:root:
+
+########## words: ['fish', 'is', 'called']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1212            2445597         0.000496        0.600000        11.715547       
+INFO:root:2         86              18040           0.004767        0.300000        9.449613        
+INFO:root:3         1               5               0.200000        0.100000        5.643856        
+INFO:root:final sum of probability: 26.809016
+INFO:root:
+
+########## words: ['is', 'called', 'top']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         377             2445597         0.000154        0.600000        13.400300       
+INFO:root:2         1               1192            0.000839        0.300000        11.956134       
+INFO:root:3         1               86              0.011628        0.100000        9.748193        
+INFO:root:final sum of probability: 35.104627
+INFO:root:
+
+########## words: ['is', 'called', 'topathing']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         1               24455970        0.000000        0.600000        25.280649       
+INFO:root:2         1               11920           0.000084        0.300000        15.278062       
+INFO:root:3         1               860             0.001163        0.100000        13.070121       
+INFO:root:final sum of probability: 53.628832
+INFO:root:
+
+########## words: ['is', 'called', 'a']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         39453           2445597         0.016132        0.600000        6.690873        
+INFO:root:2         48              1192            0.040268        0.300000        6.371172        
+INFO:root:3         7               86              0.081395        0.100000        6.940838        
+INFO:root:final sum of probability: 20.002883
+INFO:root:
+
+########## words: ['is', 'called', 'the']
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         146763          2445597         0.060011        0.600000        4.795592        
+INFO:root:2         162             1192            0.135906        0.300000        4.616284        
+INFO:root:3         15              86              0.174419        0.100000        5.841302        
+INFO:root:final sum of probability: 15.253178

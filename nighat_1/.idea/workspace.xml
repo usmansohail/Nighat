@@ -12,7 +12,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nighat_1$tri_gram_model.coverage" NAME="tri_gram_model Coverage Results" MODIFIED="1525856082498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/CSCI-490/corpera/get_corpus_data" />
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial__1_.coverage" NAME="simplenlg_tutorial (1) Coverage Results" MODIFIED="1525850418078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0" />
-    <SUITE FILE_PATH="coverage/nighat_1$system_test.coverage" NAME="system_test Coverage Results" MODIFIED="1532324921060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$system_test.coverage" NAME="system_test Coverage Results" MODIFIED="1532375729210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial.coverage" NAME="simplenlg_tutorial Coverage Results" MODIFIED="1524946627979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0/examples" />
     <SUITE FILE_PATH="coverage/nighat_1$ngram.coverage" NAME="ngram Coverage Results" MODIFIED="1531628875645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$system_tools.coverage" NAME="system_tools Coverage Results" MODIFIED="1532042512766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,8 +36,8 @@
       <file leaf-file-name="system_tools.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/system_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="263">
+              <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -48,7 +48,7 @@
       <file leaf-file-name="ngram.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ngram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="540">
               <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -60,7 +60,7 @@
       <file leaf-file-name="system_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="345">
               <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -385,7 +385,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" x="853" y="455" width="214" height="120" id="Run" order="2" visible="true" weight="0.41558442" />
+      <window_info active="true" anchor="bottom" x="853" y="455" width="214" height="120" id="Run" order="2" visible="true" weight="0.57575756" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33777037" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" weight="0.22233713" />
       <window_info anchor="right" id="R Packages" order="3" />
@@ -406,10 +406,11 @@
       <window_info anchor="right" id="Data View" order="3" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.22234157" />
       <window_info id="Structure" order="1" side_tool="true" visible="true" weight="0.22382672" />
       <window_info anchor="right" id="Commander" order="3" weight="0.4" />
@@ -418,18 +419,17 @@
       <window_info anchor="right" id="R Graphics" order="1" />
       <window_info active="true" anchor="bottom" x="853" y="455" width="214" height="120" id="Run" order="4" visible="true" weight="0.36958817" />
       <window_info anchor="right" id="R Packages" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Find" order="3" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39915523" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3382688" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="right" id="SciView" order="0" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Data View" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="345">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -583,7 +583,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ngram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="540">
           <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -593,8 +593,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="263">
+          <caret line="36" column="39" lean-forward="true" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
           </folding>
