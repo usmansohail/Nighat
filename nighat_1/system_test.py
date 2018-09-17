@@ -55,6 +55,9 @@ def test_ngram():
 test_builder()
 
 
+# system_tools = SystemTools()
+# print(system_tools.build_word([14133,16455,8993,9004]))
+
 # punkt = WordPunctTokenizer()
 # dir = nltk.data.find('corpora/gutenberg')
 # # my_tokenizer = nltk.RegexpTokenizer('[a-z|A-Z]+')

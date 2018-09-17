@@ -5,17 +5,27 @@ import re
 from classes import symbol, character
 
 
+# constants
+CHARS_LIST_NAME = "pickles/chars.p"
+CHARS_DICT_NAME = "pickles/chars_dict.p"
+
+SYMBOLS_LIST_NAME = "pickles/symbols.p"
+SYMBOL_DICT_NAME = 'pickles/symbols_dict.p'
+
 # get all the characters
 def get_characters():
     # open the excel file
-    file = open("dictionary-n.xlsx", 'rb')
+    file = open("pickles/dictionary-n.xlsx", 'rb')
     wb = pyxl.load_workbook(file)
     ws = wb.active
 
     # store characters and words
     words = []
     characters = []
+    characters_dict = {}
+
     symbols = []
+    symbols_dict = {}
 
 
 
@@ -146,9 +156,13 @@ def get_characters():
             t_is_word = not is_character
             t_char = symbol(line[1], composition.split(" + "), line[0], t_is_word)
             characters.append(t_char)
+            characters_dict[t_char.id] = t_char
+
+
 
         sym = symbol(line[1], composition.split(" + "), line[0], not is_character)
         symbols.append(sym)
+        symbols_dict[sym.id] = sym
 
 
     #print(len(id_to_character_dict.keys()))
@@ -176,8 +190,10 @@ def get_characters():
     #print(len(word_to_id_dict.keys()))
     pickle.dump(word_to_id_dict, open("word_to_char_id.p", "wb"))
 
-    pickle.dump(characters, open("chars_list.p", 'wb'))
-    pickle.dump(symbols, open("symbols_list.p", 'wb'))
+    pickle.dump(characters, open(CHARS_LIST_NAME, 'wb'))
+    pickle.dump(symbols, open(SYMBOLS_LIST_NAME, 'wb'))
+    pickle.dump(symbols_dict, open(SYMBOL_DICT_NAME, 'wb'))
+
     pickle.dump(id_to_words_dict, open("id_to_words.p", 'wb'))
 
 
@@ -187,8 +203,8 @@ def get_characters():
 
 
 get_characters()
-chars  = pickle.load(open("chars_list.p", 'rb'))
-syms  = pickle.load(open("symbols_list.p", 'rb'))
+chars  = pickle.load(open(CHARS_LIST_NAME, 'rb'))
+syms  = pickle.load(open(CHARS_LIST_NAME, 'rb'))
 
 # num_indicators = 0
 # num_char_ind = 0
