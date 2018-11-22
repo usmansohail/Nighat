@@ -9,6 +9,7 @@ class Gender(object):
     masculine = "masculine"
     feminine = "feminine"
 
+
 class symbol(object):
     words = []
     composition = []

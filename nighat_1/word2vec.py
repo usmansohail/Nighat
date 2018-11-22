@@ -1,3 +1,4 @@
+import scipy
 import gensim.downloader as api
 import pickle
 import os
@@ -5,6 +6,10 @@ import warnings
 warnings.filterwarnings(action='ignore', category=UserWarning, module='gensim')
 import gensim, logging
 from nltk.corpus import wordnet, gutenberg, brown, conll2000
+import json
+from gensim.test.utils import get_tmpfile
+from gensim.models import KeyedVectors
+import utils
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s :%(message)s', level=logging.INFO)
 
@@ -53,38 +58,74 @@ class Word_2_Vec:
 #
 # w.model.wv.most_similar(positive=word_1)
 
-model = Word_2_Vec()
-# model.train(gutenberg)
-model.load_model(MODEL_NAME)
-
-word_1 = "and"
-# model.model.wv.most_similar(positive=word_1)
-
-vector = model.model.wv['dirty']
-print(vector)
+# model = Word_2_Vec()
+# # model.train(gutenberg)
+# model.load_model(MODEL_NAME)
+#
+# word_1 = "and"
+# # model.model.wv.most_similar(positive=word_1)
+#
+# vector = model.model.wv['dirty']
+# print(vector)
 
 # fname = gensim.utils.get_tmpfile(VECTORS)
 # word_vectors = model.model.wv
 # word_vectors.save(fname)
 
-word_vectors = api.load("glove-wiki-gigaword-100")
+# word_vectors = api.load("glove-wiki-gigaword-100")
+fname = get_tmpfile("vectors.kv")
+# word_vectors.save(fname)
 
-result = word_vectors.most_similar(positive=['woman', 'king'], negative=['man'])
-result = word_vectors.most_similar(positive=['feeling', 'fire'])
-result = word_vectors.most_similar(positive=['sign', 'vehicle'])
-result = word_vectors.most_similar(positive=['much', 'wave'])
-result = word_vectors.most_similar(positive=['question', 'time'])
+word_vectors = KeyedVectors.load(fname, mmap='r')
+
+
+
+print("done loading\n\n\n")
+
+# result = word_vectors.most_similar(positive=['woman', 'king'], negative=['man'])
+# result = word_vectors.most_similar(positive=['feeling', 'fire'])
+# result = word_vectors.most_similar(positive=['sign', 'vehicle'])
+# result = word_vectors.most_similar(positive=['much', 'wave'])
+# result = word_vectors.most_similar(positive=['question', 'time'])
 
 word_combos = [['desire', 'feeling', 'fire'], ['street sign', 'sign', 'vehicle'], ['rough seas', 'much', 'wave'],
                ['when', 'question', 'time'], ['where', 'question', 'earth'], ['who', 'question', 'person'],
                ['school uniform', 'cloths', 'school'], ['sign', 'thing', 'information'], ['speech', 'activity', 'mouth'],
                ['sunglasses', 'sun', 'glasses'], ['tourist', 'visitor', 'place']]
 
-for combo in word_combos:
-    result = word_vectors.most_similar(positive=combo[1::])
-    print(combo[0], ' = ', combo[1], " + ", combo[2], ":")
-    print("{}: {:4f}".format(*result[0]))
-    print('\n\n')
+def build_word(list):
+    for combo in list:
+        result = word_vectors.most_similar(positive=combo[1::])
+        print(combo[0], ' = ', combo[1], " + ", combo[2], ":")
+        print("{}: {:4f}".format(*result[0]))
+        print('\n\n')
+
+
+def get_words():
+    dictionary = dict(pickle.load(open('pickles/id_to_words.p', 'rb')))
+    keys = dictionary.keys()
+    words = []
+    for i, key in enumerate(keys):
+        potentials = dictionary[key]
+        potentials = str(potentials).split(',')
+        for w in potentials:
+            if not(')' in w or '-' in w or '(' in w or '_' in w or '+' in w):
+                words.append(w)
+    return words
+
+# words = get_words()
+# json.dump(words, open('pickles/word_set.json', 'w'))
+words = json.load(open('pickles/word_set.json', 'r'))
+
+word_vecs = [None] * len(words)
+for i, word in enumerate(words):
+    try:
+        word_vecs[i] = word_vectors[word]
+        print(type(word_vectors[word]))
+    except KeyError:
+        pass
+
+
 
 
 # class input_sentences(object):
