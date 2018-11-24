@@ -1,5 +1,6 @@
 import sys, getopt
 # import interpretation_classes
+from interpretation_classes import Interpreter
 import system_tools
 
 def main(argv):
@@ -9,7 +10,7 @@ def main(argv):
     got_observations = False
 
     try:
-        opts, args = getopt.getopt(argv, "s:o:h")
+        opts, args = getopt.getopt(argv, "s:o:k:h")
     except getopt.GetoptError:
         print("must include a symbols file, and an observations file")
         sys.exit()
@@ -17,11 +18,9 @@ def main(argv):
         # print(opt, arg)
         if opt == "-s":
             symbol_file = open(arg, 'r')
-            print(symbol_file.read())
             got_symbols = True
         if opt == "-o":
             observation_file = open(arg, 'r')
-            print(observation_file.read())
             got_observations = True
         if opt == "-h":
             print("provide a file for the symbol input, and observations. i.e. -i symbols.txt -o observation.txt")
@@ -33,7 +32,17 @@ def main(argv):
     if not got_observations or not got_symbols:
         sys.exit()
 
+
+    # create an interpreter
+    eric = Interpreter()
+    eric.observe_file(observation_file)
+
+    # read the observation file, and pass it to the Interpreter
+
+
 if __name__ == "__main__":
     main(sys.argv[1:])
 else:
     print("whoops")
+
+
