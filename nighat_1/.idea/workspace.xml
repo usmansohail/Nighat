@@ -4,6 +4,16 @@
     <list default="true" id="fd77ad40-5248-417c-becc-14e79f31e465" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interpretation_classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/interpretation_classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interpretation_examples/symbols.txt" beforeDir="false" afterPath="$PROJECT_DIR$/interpretation_examples/symbols.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickles/first_words.p" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/first_words.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickles/interpolation_constants.p" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/interpolation_constants.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickles/n_grams.p" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/n_grams.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickles/num_words.p" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/num_words.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pickles/words.p" beforeDir="false" afterPath="$PROJECT_DIR$/pickles/words.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_interpretation.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_interpretation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/system_tools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,15 +23,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/nighat_1$system_tools.coverage" NAME="system_tools Coverage Results" MODIFIED="1542688254652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nighat_1$run_interpretation.coverage" NAME="run_interpretation Coverage Results" MODIFIED="1543311109355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$run_interpretation.coverage" NAME="run_interpretation Coverage Results" MODIFIED="1543504092088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial.coverage" NAME="simplenlg_tutorial Coverage Results" MODIFIED="1524946627979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0/examples" />
-    <SUITE FILE_PATH="coverage/nighat_1$interpretation_classes.coverage" NAME="interpretation_classes Coverage Results" MODIFIED="1543310599268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$Nosetests_for_system_test_test_builder.coverage" NAME="Nosetests for system_test.test_builder Coverage Results" MODIFIED="1543485711917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$interpretation_classes.coverage" NAME="interpretation_classes Coverage Results" MODIFIED="1543487408982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$heart_rate_info.coverage" NAME="heart_rate_info Coverage Results" MODIFIED="1543026886463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$tri_gram_model.coverage" NAME="tri_gram_model Coverage Results" MODIFIED="1525856082498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documents/CSCI-490/corpera/get_corpus_data" />
     <SUITE FILE_PATH="coverage/nighat_1$ngram.coverage" NAME="ngram Coverage Results" MODIFIED="1542688266983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/nighat_1$word2vec.coverage" NAME="word2vec Coverage Results" MODIFIED="1542688098120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$word2vec.coverage" NAME="word2vec Coverage Results" MODIFIED="1543473022011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$simplenlg_tutorial__1_.coverage" NAME="simplenlg_tutorial (1) Coverage Results" MODIFIED="1525850418078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0" />
-    <SUITE FILE_PATH="coverage/nighat_1$system_test.coverage" NAME="system_test Coverage Results" MODIFIED="1537165174700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/nighat_1$system_test.coverage" NAME="system_test Coverage Results" MODIFIED="1543500050637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$tri_gram_model__1_.coverage" NAME="tri_gram_model (1) Coverage Results" MODIFIED="1525861766106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$build_dictionary.coverage" NAME="build_dictionary Coverage Results" MODIFIED="1537174964688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/nighat_1$test.coverage" NAME="test Coverage Results" MODIFIED="1524946771997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../nlglib-0.1.0/nlglib-0.1.0" />
@@ -29,23 +40,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interpretation_classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="137" column="35" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2513">
+              <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/interpretation_examples/symbols.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -53,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_interpretation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -66,58 +74,31 @@
         <entry file="file://$PROJECT_DIR$/interpretation_examples/observations.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ngram.py">
+        <entry file="file://$PROJECT_DIR$/system_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="222">
+              <caret line="200" column="94" selection-start-line="200" selection-start-column="94" selection-end-line="200" selection-end-column="94" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes.py">
+        <entry file="file://$PROJECT_DIR$/system_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build_dictionary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2070">
-              <caret line="145" column="61" selection-start-line="145" selection-start-column="61" selection-end-line="145" selection-end-column="61" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#13#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/word2vec.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/get_symbol_and_characters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2850">
-              <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -203,16 +184,16 @@
         <option value="$PROJECT_DIR$/ngram.py" />
         <option value="$PROJECT_DIR$/count_dictionary_elements.py" />
         <option value="$PROJECT_DIR$/count.py" />
-        <option value="$PROJECT_DIR$/system_tools.py" />
-        <option value="$PROJECT_DIR$/system_test.py" />
         <option value="$PROJECT_DIR$/get_symbol_and_characters.py" />
         <option value="$PROJECT_DIR$/build_dictionary.py" />
         <option value="$PROJECT_DIR$/word2vec.py" />
-        <option value="$PROJECT_DIR$/interpretation_examples/observations.txt" />
         <option value="$PROJECT_DIR$/heart_rate_info.py" />
-        <option value="$PROJECT_DIR$/interpretation_examples/symbols.txt" />
         <option value="$PROJECT_DIR$/run_interpretation.py" />
+        <option value="$PROJECT_DIR$/system_tools.py" />
         <option value="$PROJECT_DIR$/interpretation_classes.py" />
+        <option value="$PROJECT_DIR$/system_test.py" />
+        <option value="$PROJECT_DIR$/interpretation_examples/observations.txt" />
+        <option value="$PROJECT_DIR$/interpretation_examples/symbols.txt" />
       </list>
     </option>
   </component>
@@ -224,7 +205,7 @@
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="3907" />
     <option name="y" value="900" />
-    <option name="width" value="1492" />
+    <option name="width" value="1550" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -241,6 +222,11 @@
               <item name="nighat_1" type="b2602c69:ProjectViewProjectNode" />
               <item name="nighat_1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="nighat_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nighat_1" type="462c0819:PsiDirectoryNode" />
+              <item name="interpretation_examples" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -251,7 +237,7 @@
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../hw_msohail/project4" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -276,28 +262,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.run_interpretation">
-    <configuration name="heart_rate_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="nighat_1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/heart_rate_info.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="interpretation_classes" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nighat_1" />
       <option name="INTERPRETER_OPTIONS" value="-s interpretation_examples/symbols.txt -o interpretation_examples/observations.txt" />
@@ -312,28 +276,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interpretation_classes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ngram" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="nighat_1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ngram.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -364,20 +306,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="system_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="system_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="nighat_1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/system_tools.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/system_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="word2vec" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="nighat_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word2vec.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -393,6 +357,22 @@
       <tasks />
       <arguments />
       <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Nosetests for system_test.test_builder" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="nighat_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;system_test.test_builder&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
@@ -412,19 +392,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.system_tools" />
-      <item itemvalue="Python.ngram" />
       <item itemvalue="Python.interpretation_classes" />
       <item itemvalue="Python.run_interpretation" />
-      <item itemvalue="Python.heart_rate_info" />
+      <item itemvalue="Python tests.Nosetests for system_test.test_builder" />
+      <item itemvalue="Python.system_test" />
+      <item itemvalue="Python.word2vec" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_interpretation" />
+        <item itemvalue="Python.system_test" />
         <item itemvalue="Python.interpretation_classes" />
-        <item itemvalue="Python.heart_rate_info" />
-        <item itemvalue="Python.ngram" />
-        <item itemvalue="Python.system_tools" />
+        <item itemvalue="Python tests.Nosetests for system_test.test_builder" />
+        <item itemvalue="Python.word2vec" />
       </list>
     </recent_temporary>
   </component>
@@ -444,11 +424,24 @@
       <workItem from="1542870618942" duration="3300000" />
       <workItem from="1543024182946" duration="5514000" />
       <workItem from="1543096977025" duration="14419000" />
+      <workItem from="1543385483251" duration="719000" />
+      <workItem from="1543459396732" duration="17661000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Nosetests_for_system_test_test_builder - 2018.11.28 at 21h 30m 36s.xml">
+      <configuration name="Nosetests for system_test.test_builder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_system_test_test_builder - 2018.11.29 at 02h 01m 46s.xml">
+      <configuration name="Nosetests for system_test.test_builder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_for_system_test_test_builder - 2018.11.29 at 02h 01m 52s.xml">
+      <configuration name="Nosetests for system_test.test_builder" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25928000" />
+    <option name="totallyTimeSpent" value="44308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,16 +453,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3907" y="900" width="1492" height="1080" extended-state="4" />
+    <frame x="3907" y="900" width="1550" height="1080" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.42055085" visible="true" weight="0.35892117" />
-      <window_info id="Structure" order="1" sideWeight="0.5794492" side_tool="true" visible="true" weight="0.35892117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4894068" visible="true" weight="0.35571808" />
+      <window_info id="Structure" order="1" sideWeight="0.51059324" side_tool="true" visible="true" weight="0.35571808" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32944915" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32944915" />
-      <window_info anchor="bottom" x="5399" y="937" width="1001" height="1043" id="Run" order="2" type="WINDOWED" visible="true" weight="0.31601274" />
-      <window_info active="true" anchor="bottom" x="5399" y="937" width="1001" height="1043" id="Debug" order="3" sideWeight="0.49979568" type="WINDOWED" visible="true" weight="0.3902439" />
+      <window_info anchor="bottom" x="5457" y="937" width="943" height="1043" id="Run" order="2" type="WINDOWED" visible="true" weight="0.31601274" />
+      <window_info anchor="bottom" x="5457" y="937" width="943" height="1043" id="Debug" order="3" sideWeight="0.49979568" type="WINDOWED" visible="true" weight="0.3902439" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299241" />
@@ -533,8 +527,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/interpretation_classes.py</url>
-          <line>216</line>
-          <option name="timeStamp" value="62" />
+          <line>255</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -547,9 +541,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pyffs_test/test/automaton_generation/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/pyffs_test/test/automaton_generation/test_utils.py" />
-    <entry file="file://$PROJECT_DIR$/pyffs_test/test/automaton_generation/test_parametrized_state.py" />
     <entry file="file://$PROJECT_DIR$/pyffs_test/test/utils.py" />
     <entry file="file://$PROJECT_DIR$/pyffs/settings.py" />
     <entry file="file://$PROJECT_DIR$/pyffs_test/test/fuzzy_search/test_algorithms.py" />
@@ -598,20 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/count.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/count_dictionary_elements.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -636,24 +613,10 @@
     <entry file="file://$PROJECT_DIR$/scratch.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python3.6/dist-packages/nltk/corpus/reader/wordnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="1532" selection-start-line="1532" selection-end-line="1532" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -663,61 +626,6 @@
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ngram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="145" column="61" selection-start-line="145" selection-start-column="61" selection-end-line="145" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_symbol_and_characters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpretation_examples/observations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interpretation_examples/symbols.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -731,10 +639,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_interpretation.py">
+    <entry file="file://$PROJECT_DIR$/count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_sentences/input_sentences.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_sentences/the_blissymbol_opposite_series.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_nosetest_runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_symbol_and_characters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="194" column="56" selection-start-line="194" selection-start-column="56" selection-end-line="194" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build_dictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="145" column="61" selection-start-line="145" selection-start-column="61" selection-end-line="145" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="200" column="94" selection-start-line="200" selection-start-column="94" selection-end-line="200" selection-end-column="94" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2798">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpretation_examples/observations.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_interpretation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -743,11 +748,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interpretation_classes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="137" column="35" selection-start-line="137" selection-start-column="35" selection-end-line="137" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2513">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interpretation_examples/symbols.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>

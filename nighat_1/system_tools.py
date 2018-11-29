@@ -190,7 +190,7 @@ class SystemTools:
         return return_list
 
 
-    def build_sentence(self, list_of_lists):
+    def build_sentence(self, list_of_lists, return_words=False, articles=True):
         words = []
         for list in list_of_lists:
             built_words = self.build_word(list)
@@ -198,14 +198,17 @@ class SystemTools:
             if built_words is not None and len(built_words) >= 1:
                 for i, word in enumerate(built_words):
                     pos = nltk.pos_tag([word])[0]
-                    if article_check and 'NN' in pos[1] and wordnet.synsets(word):
+                    if article_check and 'NN' in pos[1] and wordnet.synsets(word) and articles:
                         words.append(['', 'a', 'the'])
                         article_check = False
                 words.append(built_words)
         print("WORDS::::: ", words)
-        sentence = self.get_most_likely_sentence(words)
-        sentence = [x for x in sentence if x is not None]
+        if return_words:
+            return words
+        likely_sentence = self.get_most_likely_sentence(words)
+        sentence = likely_sentence
         print(sentence, '\n')
+        return sentence
 
     def get_combo_from_indeces(self, indecs, list_of_ists):
         temp_combo = [None] * (len(indecs))
@@ -299,7 +302,7 @@ class SystemTools:
         # count the number of potential blank words in the first n words
         not_blanks = 0
         i = 0
-        while not_blanks < self.ngram.n:
+        while not_blanks < self.ngram.n and i < len(list_of_lists):
             if '' not in list_of_lists[i]:
                 not_blanks += 1
             i += 1
@@ -347,7 +350,7 @@ class SystemTools:
                 return_list = return_list[:slice_end] + return_list[slice_end + 1:]
             else:
                 return_list[slice_end - 1] = combos[-1][1]
-
+        return_list = [x for x in return_list if x is not None]
         return return_list
 
     def get_dictionary(self, word, n):

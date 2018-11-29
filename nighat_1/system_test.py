@@ -29,10 +29,10 @@ def test_builder():
 
 def test_ngram():
     n_g = n_gram(3, .06, logging=False)
-    n_g.load_n_gram()
-    # n_g.read_corpus(gutenberg)
-    # n_g.read_corpus(brown)
-    # n_g.read_corpus(conll2000)
+    # n_g.load_n_gram()
+    n_g.read_corpus(gutenberg)
+    n_g.read_corpus(brown)
+    n_g.read_corpus(conll2000)
     combinations = [None]  * 1000
     index = 0
     for i in range(40, 65, 2):
@@ -51,8 +51,8 @@ def test_ngram():
         print(c)
 
 
-# test_ngram()
-test_builder()
+test_ngram()
+# test_builder()
 
 
 # system_tools = SystemTools()

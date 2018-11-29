@@ -35,9 +35,10 @@ def main(argv):
 
     # create an interpreter
     eric = Interpreter()
-    eric.observe_file(observation_file)
 
-    # read the observation file, and pass it to the Interpreter
+    # read the observations, and then the symbols file
+    eric.interpret(observation_file, symbol_file)
+
 
 
 if __name__ == "__main__":

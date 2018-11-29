@@ -1,5 +1,7 @@
+from system_tools import SystemTools
 import time
 from nltk.corpus import wordnet
+
 
 #CONSTANTS
 MAX_ITER = 25
@@ -12,17 +14,17 @@ class axiom(object):
 
         # get the synonyms of the type word
         syns = wordnet.synsets(self.type)
-        self.trigger_words = [syn.lemmas()[0].name() for syn in syns]
-        self.trigger_words.append(type)
+        self.trigger_words = [type] + [syn.lemmas()[0].name() for syn in syns]
 
         self.function = func
 
 class Goal(axiom):
 
-    def __init__(self, eventuality, agent):
+    def __init__(self, eventuality, agent='self'):
         axiom.__init__(self, 'goal')
         self.goal_eventuality = eventuality
         self.agent = agent
+        self.trigger_words = ['like', 'want']
 
 
 class Need(axiom):
@@ -74,6 +76,7 @@ class Knowledge_base():
         # add manual functions
         self.axioms.append(axiom('heart_rate', func=fever_heart_rate))
         self.add_knowledge(Need(Eventuality('take', constraints='tylenol'), 'fever'))
+        self.add_knowledge(Goal(Eventuality('cook', constraints='pasta')))
 
     def add_knowledge(self, axiom):
         self.axioms.append(axiom)
@@ -108,12 +111,14 @@ class Knowledge_base():
 
 class Inference:
 
-    def __init__(self, words_in_order=None, action=None, ref_object=None, subject='None', observation=None):
+    def __init__(self, axiom_used, words_in_order=None, action=None, ref_object=None, subject='None', observation=None):
         self.words_in_order = words_in_order
         self.action = action
         self.ref_object = ref_object
         self.subject = subject
         self.observation = observation
+        self.trigger_words = axiom_used.trigger_words
+        self.axiom = axiom_used
 
         # create a dictionary with all these elements in it
         self.content = {}
@@ -170,9 +175,9 @@ class Interpreter():
             # if an axiom was found, try and use the function defined by it
             if r_axiom is not None:
                 if r_axiom.function is not None:
-                    inference = r_axiom.function(observation[-1])
-                    print("Observation: ", observation, " lead to the inference: ", inference)
-                    new_inference = Inference(observation=inference)
+                    inference_observation = r_axiom.function(observation[-1])
+                    print("Observation: ", observation, " lead to the inference: ", inference_observation)
+                    new_inference = Inference(r_axiom, observation=inference_observation)
                     self.inferences[time.time()] = new_inference
                     self.last_inference = new_inference
 
@@ -210,7 +215,7 @@ class Interpreter():
                                     # infer what is needed
                                     action_needed = axiom.eventuality.event
                                     object_needed = axiom.eventuality.constraints
-                                    new_inference = Inference(words_in_order=[action_needed, object_needed],
+                                    new_inference = Inference(axiom, words_in_order=[action_needed, object_needed],
                                                               action=action_needed, ref_object=object_needed)
 
                                     # ensure that this inference has not been made before
@@ -232,27 +237,52 @@ class Interpreter():
                     self.inferences[inference[0]] = inference[1]
                 self.secondary_infer(iteration + 1)
 
+    def apply_inferences(self, sentence_words):
+        return_sentences = [sentence_words]
+        for i, word in enumerate(sentence_words):
+            for inference in self.inferences.values():
+                new_sentence = sentence_words.copy()
+                valid_change = False
+                if inference.trigger_words is not None:
+                    for i_word in inference.trigger_words:
+                        if i_word == word:
+                            # replace the next word with the constraint of the axiom
+                            if i + 1 < len(sentence_words):
+                                if type(inference.axiom) == Need:
+                                    new_sentence[i + 1] = inference.axiom.eventuality.constraints
+                                valid_change = True
+                    if valid_change:
+                        return_sentences.append(new_sentence)
+        return return_sentences
 
+    def interpret(self, observation_file, symbols_file):
+        # make the observations and store them
+        self.observe_file(observation_file)
 
-    
+        # create the blissymbolics builder
+        system_tools = SystemTools()
 
-########
-# Passport info
-########
-constants = {}
+        # open the file with the test set
+        book_1 = symbols_file
 
-constants['name'] = 'name'
+        # for each line, build a sentence
+        lines = []
+        for i, line in enumerate(book_1):
+            if line[0] is not "#":
+                l = str(line).split(' ')
+                for j, word in enumerate(l):
+                    l[j] = str(word).split(',')
+                    l[j] = [int(x.strip()) for x in l[j] if x is not '\n']
+                lines.append(l)
+                print("Input: ", l)
+                sentence_words = system_tools.build_sentence(l, articles=False)
 
+                # search the words to see if any should be modified based on observations/inferences
+                possible_sentences = self.apply_inferences(sentence_words)
 
-name = "name"
-# TODO: use a formal grammar
+                # print each sentence
+                print('\nPossible sentences: \n')
+                for sentence in possible_sentences:
+                    system_tools.get_most_likely_sentence([[x] for x in sentence])
 
-item_1 = Need(Eventuality('take', constraints=('tylenol')), ('fever'))
-
-item_3 = Goal(Eventuality('read'), name)
-
-
-
-neccessities = []
-
-# test the interpreter
+    # def interpret_word(self, word_ids):

@@ -1,1 +1,67 @@
 INFO:nlglib:initialising NLG library
+DEBUG:nlglib.realisation.simplenlg.client:Starting SimplenlgClient(nlg.kutlak.info:40000)
+INFO:root:
+
+
+ ### 3 -Gram Info:
+INFO:root:Interpolation lambdas: {3: 1, 2: 0.06, 1: 0.0036}
+INFO:root:
+
+########## words: ['i', 'need', 'that']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         35856           3438676         0.010427        0.600000        7.320460        
+INFO:root:1         702             3438676         0.000204        0.600000        12.995060       
+INFO:root:1         41723           3438676         0.012133        0.600000        7.101832        
+INFO:root:2         34              35685           0.000953        0.300000        11.772533       
+INFO:root:2         6               676             0.008876        0.300000        8.552883        
+INFO:root:3         1               34              0.029412        0.100000        8.409391        
+INFO:root:final sum of probability: 56.152159
+INFO:root:
+
+########## words: ['me', 'need', 'that']
+INFO:root:First word probability: 0.000008
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         10698           3438676         0.003111        0.600000        9.065334        
+INFO:root:1         702             3438676         0.000204        0.600000        12.995060       
+INFO:root:1         41723           3438676         0.012133        0.600000        7.101832        
+INFO:root:2         1               8943            0.000112        0.300000        14.863509       
+INFO:root:2         6               676             0.008876        0.300000        8.552883        
+INFO:root:3         1               8579            0.000117        0.100000        16.388522       
+INFO:root:final sum of probability: 68.967147
+INFO:root:
+
+########## words: ['myself', 'need', 'that']
+INFO:root:First word probability: 0.000002
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         928             3438676         0.000270        0.600000        12.592406       
+INFO:root:1         702             3438676         0.000204        0.600000        12.995060       
+INFO:root:1         41723           3438676         0.012133        0.600000        7.101832        
+INFO:root:2         1               771             0.001297        0.300000        11.327553       
+INFO:root:2         6               676             0.008876        0.300000        8.552883        
+INFO:root:3         1               758             0.001319        0.100000        12.887982       
+INFO:root:final sum of probability: 65.457718
+INFO:root:
+
+########## words: ['i', 'need', 'that']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         35856           3438676         0.010427        0.600000        7.320460        
+INFO:root:1         702             3438676         0.000204        0.600000        12.995060       
+INFO:root:1         41723           3438676         0.012133        0.600000        7.101832        
+INFO:root:2         34              35685           0.000953        0.300000        11.772533       
+INFO:root:2         6               676             0.008876        0.300000        8.552883        
+INFO:root:3         1               34              0.029412        0.100000        8.409391        
+INFO:root:final sum of probability: 56.152159
+INFO:root:
+
+########## words: ['i', 'need', 'tylenol']
+INFO:root:First word probability: 0.000000
+INFO:root:n:        numerator:      denominator:    fraction:       lambda:         final result:   
+INFO:root:1         35856           3438676         0.010427        0.600000        7.320460        
+INFO:root:1         702             3438676         0.000204        0.600000        12.995060       
+INFO:root:1         1               34386760        0.000000        0.600000        25.772315       
+INFO:root:2         34              35685           0.000953        0.300000        11.772533       
+INFO:root:2         1               6760            0.000148        0.300000        14.459773       
+INFO:root:3         1               340             0.002941        0.100000        11.731319       
+INFO:root:final sum of probability: 84.051461
